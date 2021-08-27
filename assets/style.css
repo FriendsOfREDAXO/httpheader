@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document for HTTP-Header */
+/* v1.0 */
+
+.boxed-group { position: relative; background: rgba(255,255,255, 0.6); margin: 0px 0px 15px; padding: 15px 20px; border: #CCC; }
+.boxed-group dl.form-group { margin-bottom: 0px; margin-top: 15px; }
+	.boxed-group dl.form-group:first-child { margin-top: 0px; }
+	.boxed-group .hiddencontent > dl:first-child { margin-top: 15px; }
+
+.boxed-group label.nobold { font-weight: normal; }
+
+.cspblock { display: inline-block; vertical-align: top; min-width: 182px; margin: 0px 23px 18px 0px; padding: 7px 14px; transition: all .3s ease; }
+	.cspblock:hover { background: #FFF; }
+.cspblock label { margin-right: 0px !important; }
+.cspblock ul { list-style: none; margin: 0px; padding: 0px;}
+.cspblock li { margin: 0px 0px 5px; }
+
+
+/* Checkbox-Toggler */
+label input[type=checkbox].toggle { -webkit-appearance: none; -moz-appearance: none; appearance: none; width: 3em; height: 1.5em; background: #ddd; vertical-align: middle; border-radius: 1.6em; position: relative; outline: 0; margin-top: -3px; margin-right: 10px; cursor: pointer; -webkit-transition: background 0.1s ease-in-out; transition: background 0.1s ease-in-out; }
+	label input[type=checkbox].toggle::after { content: ''; width: 1.5em; height: 1.5em; background: white; position: absolute; border-radius: 1.2em; -webkit-transform: scale(0.7); transform: scale(0.7); left: 0; box-shadow: 0 1px rgba(0, 0, 0, 0.5); -webkit-transition: left 0.1s ease-in-out; transition: left 0.1s ease-in-out; }
+label input[type=checkbox].toggle:checked { background: #5791CE; }
+	label input[type=checkbox].toggle:checked::after { left: 1.5em; }
+
+/* Checkbox-Toggler small */
+.includebackend { text-align: right; zoom: 0.75; margin: 0px; position: absolute; top: 13px; right: 13px; }
+.includebackend label { margin-right: 0px !important; }
+.includebackend label input[type=checkbox].toggle { margin-right: 8px; }
+
+
+/* Modalfenster */
+.hh-modal { background: rgba(40,53,66, 0.4); }
+.hh-modal .modal-header { background: #dfe3e9; line-height: 1.25; padding: 10px 15px; font-size: 16px; }
+.hh-modal .modal-title { display: inline; }
+
+@media (min-width: 768px){
+	.hh-modal-large .modal-dialog { width: 90%; max-width: 800px;}
+}

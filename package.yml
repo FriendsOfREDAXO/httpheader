@@ -1,0 +1,17 @@
+# Alle hier gesetzten Werte können über $addon->getProperty($key) abgefragt werden
+
+package: httpheader																							#Pflichtfeld
+version: '1.0'																								#Pflichtfeld
+author: © Falko Müller
+supportpage: https://github.com/iceman-fx/httpheader
+
+page:
+    title: 'translate:a1656_title' 																			#Werte die mit "translate:" beginnen kommen aus der Sprachdatei.
+    perm: httpheader[]
+    icon: rex-icon fa-exclamation-triangle
+    subpages:
+        default: { title: 'translate:a1656_default' }
+        help: { title: 'translate:a1656_help', icon: rex-icon fa-info-circle, itemclass: pull-right }
+
+requires:
+    redaxo: '^5.10.0' 																						#benötigt mindestens REDAXO 5.10

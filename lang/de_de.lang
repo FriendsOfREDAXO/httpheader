@@ -1,0 +1,134 @@
+# addon: httpheader de_de 1.0
+
+a1656_title = HTTP-Header
+
+a1656_default = Einstellungen
+a1656_help = Hilfe
+
+a1656_head_basics = Einstellungen
+a1656_head_help = Onlinehilfe
+
+
+a1656_subheader_basic1 = Verschiedene Header
+a1656_subheader_basic2 = Security-Header
+
+
+# Backend-Ausgaben
+a1656_seo_modal_title = SEO-CheckUp
+a1656_seo_modal_analyze = Analyse wird geladen ...
+a1656_seo_modal_close = Schließen
+a1656_seo_modal_error = Fehler
+a1656_seo_modal_legibility = Lesbarkeit
+a1656_seo_modal_artnotfound = Artikel nicht gefunden
+
+
+# Seite: Allgemein = Einstellungen
+a1656_bas_active = aktivieren
+a1656_bas_remove = unterdrücken
+a1656_bas_includebackend = Inklusive Backend
+a1656_bas_property = Eigenschaft
+
+a1656_bas_h_connection = Connection: keep-alive
+a1656_bas_h_vary = Vary: Accept-Encoding
+a1656_bas_h_server = Serverkennung
+a1656_bas_h_poweredby = X-Powered-By
+a1656_bas_h_contenttype = X-Content-Type-Options: nosniff
+a1656_bas_h_frame = X-Frame-Options
+a1656_bas_h_xss = X-XSS-Protection
+a1656_bas_h_xss_block = Modus: Blockieren
+a1656_bas_h_referer = Referrer-Policy
+a1656_bas_h_transport = Strict-Transport-Security
+a1656_bas_h_transport_maxage = Gültigkeit (sek.)
+a1656_bas_h_transport_subdomains = Inklusive SubDomains
+a1656_bas_h_csp = Content-Security-Policy
+a1656_bas_h_csp_noeditor = Eingabefeld anstatt Auswahl nutzen
+a1656_bas_h_csp_editor = Eigenschaften definieren
+a1656_bas_h_csp_definition = CSP-Definition hinterlegen
+a1656_bas_h_csp_definition_example = Format: Content-Security-Policy: default-src https: 'unsafe-inline'; frame-ancestors 'none';
+a1656_bas_h_fpp = Feature-/Permissions-Policy
+a1656_bas_h_fpp_noeditor = Eingabefelder anstatt Auswahl nutzen
+a1656_bas_h_fpp_editor = Eigenschaften definieren
+a1656_bas_h_fpp_definition_f = Feature-Definition hinterlegen
+a1656_bas_h_fpp_definition_p = Permissions-Definition hinterlegen
+a1656_bas_h_fpp_definition_f_example = Format: Feature-Policy: camera 'none'; microphone self;
+a1656_bas_h_fpp_definition_p_example = Format: Permissions-Policy: camera=(), microphone=(self)
+
+a1656_bas_h_csp_default = default-src
+a1656_bas_h_csp_img = img-src
+a1656_bas_h_csp_media = media-src
+a1656_bas_h_csp_font = font-src
+a1656_bas_h_csp_script = script-src
+a1656_bas_h_csp_style = style-src
+a1656_bas_h_csp_object = object-src
+a1656_bas_h_csp_form = form-action
+a1656_bas_h_csp_frame = frame-src
+a1656_bas_h_csp_frameanc = frame-ancestors
+
+a1656_bas_h_fpp_camera = camera
+a1656_bas_h_fpp_geolocation = geolocation
+a1656_bas_h_fpp_gyro = gyroscope
+a1656_bas_h_fpp_magnet = magnetometer
+a1656_bas_h_fpp_micro = microphone
+a1656_bas_h_fpp_usb = usb
+a1656_bas_h_fpp_docdomain = document-domain
+a1656_bas_h_fpp_fullscreen = fullscreen
+a1656_bas_h_fpp_payment = payment
+
+a1656_bas_h_editor_https = https:
+a1656_bas_h_editor_data = data:
+a1656_bas_h_editor_blob = blob:
+a1656_bas_h_editor_self = self
+a1656_bas_h_editor_inline = unsafe-inline
+a1656_bas_h_editor_eval = unsafe-eval
+a1656_bas_h_editor_hashes = unsafe-hashes
+a1656_bas_h_editor_none = none
+
+
+# Sonstige Vorgaben
+a1656_example = Beispiel
+a1656_examples = Beispiele...
+a1656_overview = Übersicht:
+
+a1656_search_all = alle
+a1656_search_noselection = - keine Auswahl -
+a1656_search_sort = Ansicht
+a1656_search_sort_onlyactive = nur aktive Einträge (online)
+a1656_search_sort_onlyinactive = nur deaktivierte Einträge (offline)
+a1656_search_keyword = Suchbegriff
+a1656_search_submit = suchen
+a1656_search_reset = Suche zurücksetzen
+a1656_search_notfound = Es wurden keine Einträge gefunden.
+a1656_search_more = mehr Optionen
+a1656_search_cat = Kategorie
+a1656_search_maincat = Hauptkategorie
+a1656_search_archive = Nur Archiveinträge anzeigen
+
+a1656_edit = ändern
+a1656_delete = löschen
+a1656_online = online
+a1656_offline = offline
+a1656_new = hinzufügen
+a1656_save = Speichern
+a1656_yes = ja
+a1656_no = nein
+a1656_showbox = anzeigen/ausblenden
+a1656_showcss = CSS anzeigen/ausblenden
+
+a1656_settings_saved = Die Einstellungen wurden gespeichert!
+a1656_module_saved = Das Modul wurde installiert!
+a1656_error = Es ist ein Fehler aufgetreten!
+a1656_notice = Hinweis
+a1656_entry_saved = Eintrag gespeichert
+a1656_entry_deleted = Eintrag gelöscht
+a1656_error_saved = Fehler beim Speichern
+a1656_error_deleted = Fehler beim Löschen
+
+a1656_dir = Verzeichnis
+a1656_destdir = Zielverzeichnis
+a1656_notdeleted = konnte nicht gelöscht werden
+a1656_notcopyed = konnte nicht kopiert werden
+a1656_deletemodule = Bitte löschen Sie über das Addon installierte Module von Hand.
+a1656_emptyfield = leer oder ungültig
+a1656_charslenfield = ist zu kurz
+
+a1656_js_confirm = Wollen Sie das Modul wirklich installieren?
