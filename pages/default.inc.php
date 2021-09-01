@@ -200,7 +200,7 @@ $config = $this->getConfig('config');
             <!-- connection keep-alive -->
             <div class="boxed-group">
                 <dl class="rex-form-group form-group">
-                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_connection'); ?></label></dt>
+                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_connection'); ?> <a data-toggle="modal" data-target="#httpmodal" data-title="Connection: keep-alive" data-content="#datacontent-conn"><i class="rex-icon fa-question-circle"></i></a></label></dt>
                     <dd>
                         <div class="checkbox">
                         <label for="h_connection">
@@ -219,10 +219,11 @@ $config = $this->getConfig('config');
             </div>
             
 			
-            <!-- vary acept-encoding -->
+            
+          <!-- vary acept-encoding -->
             <div class="boxed-group">
                 <dl class="rex-form-group form-group">
-                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_vary'); ?></label></dt>
+                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_vary'); ?> <a data-toggle="modal" data-target="#httpmodal" data-title="Vary: Accept-Encoding" data-content="#datacontent-vary"><i class="rex-icon fa-question-circle"></i></a></label></dt>
                     <dd>
                         <div class="checkbox">
                         <label for="h_vary">
@@ -250,7 +251,7 @@ $config = $this->getConfig('config');
             <!-- remove server -->
             <div class="boxed-group">
                 <dl class="rex-form-group form-group">
-                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_server'); ?></label></dt>
+                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_server'); ?> <a data-toggle="modal" data-target="#httpmodal" data-title="Serverkennung" data-content="#datacontent-server"><i class="rex-icon fa-question-circle"></i></a></label></dt>
                     <dd>
                         <div class="checkbox">
                         <label for="h_server">
@@ -268,11 +269,12 @@ $config = $this->getConfig('config');
                 </dl>
             </div>
             
+            
 			
-            <!-- remove x-powered-by -->
+          <!-- remove x-powered-by -->
             <div class="boxed-group">
                 <dl class="rex-form-group form-group">
-                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_poweredby'); ?></label></dt>
+                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_poweredby'); ?> <a data-toggle="modal" data-target="#httpmodal" data-title="X-Powered-By" data-content="#datacontent-xpowered"><i class="rex-icon fa-question-circle"></i></a></label></dt>
                     <dd>
                         <div class="checkbox">
                         <label for="h_poweredby">
@@ -294,7 +296,7 @@ $config = $this->getConfig('config');
             <!-- X-Content-Type-Options -->
             <div class="boxed-group">
                 <dl class="rex-form-group form-group">
-                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_contenttype'); ?></label></dt>
+                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_contenttype'); ?> <a data-toggle="modal" data-target="#httpmodal" data-title="X-Content-Type-Options" data-content="#datacontent-xcontent"><i class="rex-icon fa-question-circle"></i></a></label></dt>
                     <dd>
                         <div class="checkbox">
                         <label for="h_contenttype">
@@ -312,11 +314,12 @@ $config = $this->getConfig('config');
                 </dl>
 			</div>
             
+            
 			
-            <!-- X-Frame-Options -->
+          <!-- X-Frame-Options -->
             <div class="boxed-group">
                 <dl class="rex-form-group form-group">
-                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_frame'); ?></label></dt>
+                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_frame'); ?> <a data-toggle="modal" data-target="#httpmodal" data-title="X-Frame-Options" data-content="#datacontent-xframe"><i class="rex-icon fa-question-circle"></i></a></label></dt>
                     <dd>
                         <div class="checkbox">
                         <label for="h_frame">
@@ -352,11 +355,12 @@ $config = $this->getConfig('config');
                 </div> 
             </div>
             
+            
 			
-            <!-- X-XSS-Protection -->
+          <!-- X-XSS-Protection -->
             <div class="boxed-group">
                 <dl class="rex-form-group form-group">
-                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_xss'); ?></label></dt>
+                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_xss'); ?> <a data-toggle="modal" data-target="#httpmodal" data-title="X-XSS-Protection" data-content="#datacontent-xxss"><i class="rex-icon fa-question-circle"></i></a></label></dt>
                     <dd>
                         <div class="checkbox">
                         <label for="h_xss">
@@ -387,11 +391,12 @@ $config = $this->getConfig('config');
                 </div> 
             </div>
             
+            
 			
-            <!-- Referrer-Policy -->
+          <!-- Referrer-Policy -->
             <div class="boxed-group">
                 <dl class="rex-form-group form-group">
-                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_referer'); ?></label></dt>
+                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_referer'); ?> <a data-toggle="modal" data-target="#httpmodal" data-title="Referrer-Policy" data-content="#datacontent-referer"><i class="rex-icon fa-question-circle"></i></a></label></dt>
                     <dd>
                         <div class="checkbox">
                         <label for="h_referer">
@@ -427,11 +432,12 @@ $config = $this->getConfig('config');
                 </div> 
             </div>
             
+
 			
-            <!-- Strict-Transport-Security -->
-            <div class="boxed-group">
+          <!-- Strict-Transport-Security -->
+            <div class="boxed-group hh-risk">
                 <dl class="rex-form-group form-group">
-                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_transport'); ?></label></dt>
+                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_transport'); ?> <a data-toggle="modal" data-target="#httpmodal" data-title="Strict-Transport-Security" data-content="#datacontent-trans"><i class="rex-icon fa-question-circle"></i></a></label></dt>
                     <dd>
                         <div class="checkbox">
                         <label for="h_transport">
@@ -469,11 +475,12 @@ $config = $this->getConfig('config');
                 </div> 
             </div>
 
+
 			
-            <!-- X-Content-Security-Policy -->
-            <div class="boxed-group">
+            <!-- Content-Security-Policy -->
+            <div class="boxed-group hh-highrisk">
                 <dl class="rex-form-group form-group">
-                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_csp'); ?></label></dt>
+                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_csp'); ?> <a data-toggle="modal" data-target="#httpmodal" data-title="Content-Security-Policy" data-content="#datacontent-csp"><i class="rex-icon fa-question-circle"></i></a></label></dt>
                     <dd>
                         <div class="checkbox">
                         <label for="h_csp">
@@ -1160,9 +1167,9 @@ $config = $this->getConfig('config');
 
 			
             <!-- Feature-Policy / Permissions-Policy -->
-            <div class="boxed-group">
+            <div class="boxed-group hh-highrisk">
                 <dl class="rex-form-group form-group">
-                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_fpp'); ?></label></dt>
+                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_fpp'); ?> <a data-toggle="modal" data-target="#httpmodal" data-title="Feature- & Permissions-Policy" data-content="#datacontent-fpp"><i class="rex-icon fa-question-circle"></i></a></label></dt>
                     <dd>
                         <div class="checkbox">
                         <label for="h_fpp">
@@ -1440,38 +1447,53 @@ $config = $this->getConfig('config');
         
         
 		<script type="text/javascript">
-		$('.hiddencontent').not('.checked').hide();
-		
-		$('input[data-opener]').change(function(){
-			dst = $(this).attr('data-opener');
+		$(function() {
+			$('.hiddencontent').not('.checked').hide();
 			
-			if (dst != undefined && dst.length > 2) {
-				if ($(this).is(':checked')) {
-					$(dst).slideDown();
-				} else {
-					$(dst).slideUp();
+			$('input[data-opener]').change(function(){
+				dst = $(this).attr('data-opener');
+				
+				if (dst != undefined && dst.length > 2) {
+					if ($(this).is(':checked')) {
+						$(dst).slideDown();
+					} else {
+						$(dst).slideUp();
+					}
 				}
-			}
-		});
-		
-		$('#h_csp_noeditor').change(function(){
-			if ($(this).is(':checked')) {
-				$('#h_csp_option_noeditor').slideDown();
-				$('#h_csp_option_editor').slideUp();
-			} else {
-				$('#h_csp_option_noeditor').slideUp();
-				$('#h_csp_option_editor').slideDown();
-			}
-		});
-		
-		$('#h_fpp_noeditor').change(function(){
-			if ($(this).is(':checked')) {
-				$('#h_fpp_option_noeditor').slideDown();
-				$('#h_fpp_option_editor').slideUp();
-			} else {
-				$('#h_fpp_option_noeditor').slideUp();
-				$('#h_fpp_option_editor').slideDown();
-			}
+			});
+			
+			//CSP-Editor Type
+			$('#h_csp_noeditor').change(function(){
+				if ($(this).is(':checked')) {
+					$('#h_csp_option_noeditor').slideDown();
+					$('#h_csp_option_editor').slideUp();
+				} else {
+					$('#h_csp_option_noeditor').slideUp();
+					$('#h_csp_option_editor').slideDown();
+				}
+			});
+			
+			//FPP-Editor Type
+			$('#h_fpp_noeditor').change(function(){
+				if ($(this).is(':checked')) {
+					$('#h_fpp_option_noeditor').slideDown();
+					$('#h_fpp_option_editor').slideUp();
+				} else {
+					$('#h_fpp_option_noeditor').slideUp();
+					$('#h_fpp_option_editor').slideDown();
+				}
+			});			
+			
+			//Modalcontent
+			$('#httpmodal').on('show.bs.modal', function (e) {
+				var button = $(e.relatedTarget);
+					var title = button.data('title');
+						cntsel = button.data('content');
+					var	content = $(cntsel).html();
+				var modal = $(this)
+					modal.find('.modal-title').text(title)
+					modal.find('.modal-body').html(content)
+			})
 		});
         </script>
         
@@ -1488,3 +1510,189 @@ $config = $this->getConfig('config');
 </section>
 
 </form>
+
+
+<!-- Modalfenster -->
+<div class="modal fade bd-example-modal-lg hh-modal" id="httpmodal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">...</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>                
+            </div>
+            
+            <div class="modal-body">...</div>      
+        </div>
+    </div>
+</div>
+
+<!-- Modalfenster Content -->
+<div class="hh-content" id="datacontent-conn">
+  <p>Die Verbindung soll nicht nach jeder Anfrage beendet werden, um die Ladegeschwindigkeit zu erhöhen.</p>
+  <p>Dieser Header ist u.U. relevant bei der Suchmaschinenoptimierung.</p>
+  <p>&nbsp;</p>
+  <p>Weitere Informationen:<br>
+  <a href="https://de.ryte.com/wiki/Keep-Alive" target="_blank">https://de.ryte.com/wiki/</a></p>
+</div>
+
+<div class="hh-content" id="datacontent-vary">
+  <p>Der Client soll u.A. erfahren können, welche Komprimierung die Website verwendet.</p>
+  <p>Dieser Header ist u.U. relevant bei der Suchmaschinenoptimierung.</p>
+  <p>&nbsp;</p>
+  <p>Weitere Informationen:<br>
+  <a href="https://de.ryte.com/wiki/Vary_Response_Header" target="_blank">https://de.ryte.com/wiki/</a></p>
+</div>
+
+<div class="hh-content" id="datacontent-server">
+  <p>Über diesen Header kann je nach Servereinstellung die Ausgabe des Servertyps unterdrückt werden.<br>
+  Allerdings kann der Webserver diesen Header ignorieren, wodurch diese Angaben weiterhin zurückgegeben werden.</p>
+</div>
+
+<div class="hh-content" id="datacontent-xpowered">
+  <p>Über diesen Header kann je nach Servereinstellung die Ausgabe der PHP-Version unterdrückt werden.<br>
+Allerdings kann der Webserver diesen Header ignorieren, wodurch diese Angaben weiterhin zurückgegeben werden.</p>
+<p>&nbsp;</p>
+  <p>Weitere Informationen:<br>
+  <a href="https://siwecos.de/wiki/X-Content-Type-Options-Schwachstelle/DE" target="_blank">https://siwecos.de/wiki/</a></p>
+</div>
+
+<div class="hh-content" id="datacontent-xcontent">
+<p>Mit diesem Header können Browser angewiesen werden, aufgerufene Dateien nicht als etwas anderes zu interpretieren als vom Inhaltstyp definiert.</p>
+<p>&nbsp;</p>
+<p><b>nosniff</b><br>
+  wird auch dann erzwungen, wenn der Content-Type nicht angegeben ist</p>
+    <p>&nbsp;</p>
+    <p>Weitere Informationen:<br>
+    <a href="https://siwecos.de/wiki/X-Content-Type-Options-Schwachstelle/DE" target="_blank">https://siwecos.de/wiki/</a></p>
+
+</div>
+
+<div class="hh-content" id="datacontent-xframe">
+  <p>Das Setzen dieses Headers hilft dabei, Angriffe über Framing-Mechanismen zu unterbinden.</p>
+  <p>&nbsp;</p>
+  <p><strong>deny</strong><br>
+  Die Seite kann nicht in einem iFrame eingebettet werden, egal welches die aufrufende Webseite ist.</p>
+  <p><strong>sameorigin</strong><br>
+    Die Seite kann nur als iFrame eingebettet werden, wenn beide von der gleichen Quellseite stammen.</p>
+  <p>&nbsp;</p>
+  <p>Weitere Informationen:<br>
+    <a href="https://siwecos.de/wiki/X-Frame-Options-Schwachstelle/DE" target="_blank">https://siwecos.de/wiki/</a><br>
+  
+</div>
+
+<div class="hh-content" id="datacontent-xxss">
+  <p>Der X-XSS-Header definiert, wie in Browsern eingebaute XSS-Filter konfiguriert/genutzt werden.</p>
+  <p>&nbsp;</p>
+  <p>Weitere Informationen:<br>
+    <a href="https://siwecos.de/wiki/XSS-Schwachstelle/DE" target="_blank">https://siwecos.de/wiki/</a><br>
+  </p>
+</div>
+
+<div class="hh-content" id="datacontent-referer">
+	<p>Mit der Referrer Policy wird geregelt, welche der Referrer-Informationen in Anfragen aufgenommen werden sollen und welche nicht.</p>
+  <p>&nbsp;</p>
+
+    <p><b>no-referrer</b><br>
+  Der Referer-Header wird vollständig weggelassen. Es werden keine Referrer-Informationen zusammen mit Anfragen gesendet.</p>
+    
+    <p><b>no-referrer-when-downgrade</b><br>
+    Dies ist das Standardverhalten, wenn keine Richtlinie angegeben ist oder wenn der angegebene Wert ungültig ist.</p>
+
+    <p><b>same-origin</b><br>
+    Der Wert `same-origin` weist den Browser an, nur Referer Header zu senden, die von Ihrer Webseite gestellt werden. Wenn das Ziel eine andere Domain ist, werden keine Referrer-Informationen gesendet.</p>       
+
+    <p><b>origin</b><br>
+    Damit wird immer die Origin der auslösenden Seite in den Referer Informationen des Requests mitgegeben. Es werden allerdings keine Informationen zum genauen Pfad weitergegeben</p>
+
+    <p><b>strict-origin</b><br>
+    Der Wert `strict-origin` weist den Browser an, als Referer Header immer die Ursprungs-Domain anzugeben.
+    </p>            
+
+    <p><b>origin-when-cross-origin</b><br>
+    Der Wert `origin-when-cross-origin` weist den Browser an, nur dann die vollständige Referrer-URL zu senden, wenn Sie auf der selben Domain bleiben. Sobald die Domain über HTTPS verlassen wird oder eine anderer Domain angesprochen wird, wird nur die Quell-Domain gesendet.</p>
+
+  <p><b>strict-origin-when-cross-origin</b><br>
+    Wie bei strict-origin handelt es sich bei strict-origin-when-cross-origin ebenfalls um eine Verschärfung einer bestehenden Regel. Es gelten die Regeln von origin-when-cross-origin. Zusätzlich werden allerdings die Referer Informationen entfernt, wenn der Request von einer HTTPS Seite zu einer HTTP Seite ausgelöst wird.</p>
+    
+    <p><b>unsafe-url</b><br>
+    Mit dieser Einstellung wird der Browser dazu angewiesen, bei jedem Request die volle URL im Referer Header mitzusenden.</p>
+    <p>&nbsp;</p>
+    <p>Weitere Informationen:<br>
+    <a href="https://siwecos.de/wiki/Referrer-Policy/DE" target="_blank">https://siwecos.de/wiki/</a></p>
+</div>
+
+<div class="hh-content" id="datacontent-trans">
+  <p>Strict-Transport-Security stellt sicher, dass die Webseite für die definierte Zeit lediglich über HTTPS aufgerufen werden kann.</p>
+  <p>&nbsp;</p>
+  <p>Die Angabe "max-age" ist  für eine korrekte Funktion Pflicht.</p>
+  <p>&nbsp;</p>
+  <p>Weitere Informationen:<br>
+    <a href="https://siwecos.de/wiki/Keine-Verschluesselung-Gefunden/DE" target="_blank">https://siwecos.de/wiki/</a>
+  </p>
+</div>
+
+<div class="hh-content" id="datacontent-csp">
+  <p>Die Content-Security-Policy definiert, aus welchen Quellen verschiedene Anfragen/Ressourcen, welche das Injizieren und Ausführen von evtl. bösartigen Befehlen, eingebunden werden dürfen.<br>
+    <br>
+  Die default-Angabe sollte dabei immer gesetzt werden. Alle weiteren Angaben ändern die default-Angabe entsprechend ab.</p>
+  <p>&nbsp;</p>
+  <p><strong>Eigenschaft &quot;default-src&quot;</strong><br>
+  Voreinstellung für alle Richtlinien.</p>
+  <p><strong>Eigenschaft &quot;img-src&quot;</strong><br>
+  Definiert erlaubte Quellen für Bilder.</p>
+  <p><strong>Eigenschaft &quot;media-src&quot;</strong><br>
+  Definiert erlaubte Quellen für Audio und Video.</p>
+  <p><strong>Eigenschaft &quot;font-src&quot;</strong><br>
+  Definiert erlaubte Quellen für Schriftarten.</p>
+  <p><strong>Eigenschaft &quot;script-src&quot;</strong><br>
+Definiert erlaubte Quellen für JavaScript.</p>
+  <p><strong>Eigenschaft &quot;style-src&quot;</strong><br>
+  Definiert erlaubte Quellen für Stylesheets.</p>
+  <p><strong>Eigenschaft &quot;object-src&quot;</strong><br>
+  Definiert erlaubte Quellen für Plugins (z.B. object, embed, applet).</p>
+  <p><strong>Eigenschaft &quot;form-action&quot;</strong><br>
+  Definiert erlaubte Ziele für HTML Formulare.</p>
+  <p><strong>Eigenschaft &quot;frame-src&quot;</strong><br>
+  Definiert erlaubte Quellen für Frame-Inhalte.</p>
+  <p><strong>Eigenschaft &quot;frame-ancestors&quot;</strong><br>
+  Definiert erlaubte Quellen die eingebettete Inhalte haben dürfen (z.B. frame, iframe).</p>
+  <p>&nbsp;</p>
+  <p><b>Wert &quot;https:&quot;</b><br>
+  Erlaubt das Laden von Ressourcen ausschließlich mit HTTPS von jeglicher Domain.</p>
+  <p><b>Wert&quot;data:&quot;</b><br>
+  Erlaubt das Laden von Ressourcen über data:-Definitionen.</p>
+  <p><b>Wert&quot;blob:&quot;</b><br>
+  Erlaubt das Laden von Ressourcen über blob:-Definitionen.</p>
+  <p><b>Wert&quot;self&quot;</b><br>
+  Erlaubt das Laden von Ressourcen von dem selben Ursprung.</p>
+  <p><b>Wert&quot;unsafe-inline&quot;</b><br>
+  Erlaubt die Benutzung von inline-Code wie z. B. style-Attribute oder onClick.</p>
+  <p><b>Wert&quot;unsafe-eval&quot;</b><br>
+  Erlaubt unsichere dynamische Code-Auswertung wie z.B. die JavaScript-Methode eval().</p>
+  <p><b>Wert&quot;unsafe-hashes&quot;</b><br>
+  Erlaubt Scripte in Event-Handlern.</p>
+  <p><b>Wert&quot;none&quot;</b><br>
+  Verhindert das Laden von Ressourcen von egal welcher Quelle.</p>
+  <p>&nbsp;</p>
+  <p>Weitere Informationen:<br>
+    <a href="https://siwecos.de/wiki/Content-Security-Policy" target="_blank">https://siwecos.de/wiki/</a>
+    <br>
+    <a href="https://wiki.selfhtml.org/wiki/Sicherheit/Content_Security_Policy#Referenz_der_Werteangaben" target="_blank">https://wiki.selfhtml.org/wiki/</a>
+    
+  </p>
+</div>
+
+<div class="hh-content" id="datacontent-fpp">
+  <p>Mit der Permissions-Policy (früher Feature-Policy) kann dem Webbrowser mitgeteilt werden, auf welche Browser- bzw. Systemfeatures zugegriffen werden kann.<br>
+  Werden keine Features/Permissions definiert, so ist der Zugriff auf entsprechende Features immer möglich.</p>
+  <p>&nbsp;</p>
+  <p><b>Wert&quot;self&quot;</b><br>
+Die entsprechende Eigenschaft  ist für die Webseite und alle eingebetteten Ressourcen mit der selben Herkunft verwendbar. </p>
+  <p><b>Wert&quot;none&quot;</b><br> 
+    Die entsprechende Eigenschaft ist deaktiviert und damit weder von der Webseite noch eingebundenen Ressourcen verwendbar.
+</p>
+  <p>&nbsp;</p>
+  <p>Weitere Informationen:<br>
+    <a href="https://www.codingblatt.de/permissions-policy-http-security-header/" target="_blank">https://www.codingblatt.de/</a>
+  </p>
+</div>

@@ -25,6 +25,7 @@
                     	<ul>
                         	<li><a href="#default">Wichtige Information</a>
                             <li><a href="#header">Header</a>
+                            <li><a href="#autor">Autor</a>
                       </ul>
                     </nav>
         	    </div>
@@ -42,7 +43,7 @@
                     
                     <!-- Allgemein (Artikel-Checkup) -->
                     <a name="default"></a>
-                                  <p><strong>Prüfen Sie immer den jeweils gesetzten Header, da es u.U. passieren kann, dass die Webseite nicht mehr wie gewünscht funktioniert.</strong></p>
+                                  <p><strong>Prüfen Sie immer den jeweils gesetzten Header, da es u.U. passieren kann, dass die Webseite anschließend nicht mehr wie gewünscht funktioniert.</strong></p>
                   <p>Des weiteren werden nicht alle Header von allen Browsern berücksichtigt. Auch unterstützen nicht alle Webserver alle Header bzw. können die Aktivierung auch verhindern.</p>
                   <p>Prüfen Sie nach der Aktivierung der Header Ihre Webseite und die korrekte Funktion der Header.<br>
                   Nützliche Prüftools sind u.a.:</p>
@@ -130,7 +131,21 @@
 				  <ul>
 				    <li><a href="https://siwecos.de/wiki/Kategorie:Glossar" target="_blank">https://siwecos.de/wiki/Kategorie:Glossar</a></li>
 				    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers" target="_blank">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers</a></li>
+                    <li><a href="https://wiki.selfhtml.org/wiki/Sicherheit" target="_blank">https://wiki.selfhtml.org/wiki/Sicherheit</a></li>
 			      </ul>
+              
+              
+                    
+                    <!-- Autor -->
+                    <a name="autor"></a>
+                  <h2>Autoren / Projekt-Leads</h2>
+                  
+                  <p><strong>Friends Of REDAXO</strong></p>
+                  
+                  <p><a href="https://github.com/iceman-fx" target="_blank">Falko Müller</a><br><a href="https://getaweb.de">
+                  getaweb / Oliver Kreischer</a></p>
+
+                  
 <p>&nbsp;</p>
                     
                     <h3>Fragen, Wünsche, Probleme?</h3>

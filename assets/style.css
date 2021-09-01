@@ -16,6 +16,10 @@
 .cspblock li { margin: 0px 0px 5px; }
 
 
+/* Header-Farben */
+.hh-risk { border-left: 3px solid orange; }
+.hh-highrisk { border-left: 3px solid #D9534F; }
+
 /* Checkbox-Toggler */
 label input[type=checkbox].toggle { -webkit-appearance: none; -moz-appearance: none; appearance: none; width: 3em; height: 1.5em; background: #ddd; vertical-align: middle; border-radius: 1.6em; position: relative; outline: 0; margin-top: -3px; margin-right: 10px; cursor: pointer; -webkit-transition: background 0.1s ease-in-out; transition: background 0.1s ease-in-out; }
 	label input[type=checkbox].toggle::after { content: ''; width: 1.5em; height: 1.5em; background: white; position: absolute; border-radius: 1.2em; -webkit-transform: scale(0.7); transform: scale(0.7); left: 0; box-shadow: 0 1px rgba(0, 0, 0, 0.5); -webkit-transition: left 0.1s ease-in-out; transition: left 0.1s ease-in-out; }
@@ -32,6 +36,8 @@ label input[type=checkbox].toggle:checked { background: #5791CE; }
 .hh-modal { background: rgba(40,53,66, 0.4); }
 .hh-modal .modal-header { background: #dfe3e9; line-height: 1.25; padding: 10px 15px; font-size: 16px; }
 .hh-modal .modal-title { display: inline; }
+.hh-content { display: none; }
+
 
 @media (min-width: 768px){
 	.hh-modal-large .modal-dialog { width: 90%; max-width: 800px;}
