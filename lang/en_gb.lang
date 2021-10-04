@@ -1,0 +1,134 @@
+# addon: httpheader en_gb 1.0
+
+a1656_title = HTTP header
+
+a1656_default = Settings
+a1656_help = Help
+
+a1656_head_basics = Settings
+a1656_head_help = Online help
+
+
+a1656_subheader_basic1 = Various headers
+a1656_subheader_basic2 = Security header
+
+
+# Backend Output
+a1656_seo_modal_title = SEO CheckUp
+a1656_seo_modal_analyze = Analysis is loading ...
+a1656_seo_modal_close = Close
+a1656_seo_modal_error = Error
+a1656_seo_modal_legibility = Readability
+a1656_seo_modal_artnotfound = Article not found
+
+
+# Page: General = Settings
+a1656_bas_active = activate
+a1656_bas_remove = suppress
+a1656_bas_includebackend = Including backend
+a1656_bas_property = property
+
+a1656_bas_h_connection = Connection: keep-alive
+a1656_bas_h_vary = Vary: Accept-Encoding
+a1656_bas_h_server = Server ID
+a1656_bas_h_poweredby = X-Powered-By
+a1656_bas_h_contenttype = X-Content-Type-Options: nosniff
+a1656_bas_h_frame = X frame options
+a1656_bas_h_xss = X-XSS protection
+a1656_bas_h_xss_block = Mode: Block
+a1656_bas_h_referer = Referrer-Policy
+a1656_bas_h_transport = Strict-Transport-Security
+a1656_bas_h_transport_maxage = Validity (sec.)
+a1656_bas_h_transport_subdomains = Including SubDomains
+a1656_bas_h_csp = Content-Security-Policy
+a1656_bas_h_csp_noeditor = Use input field instead of selection
+a1656_bas_h_csp_editor = Define properties
+a1656_bas_h_csp_definition = Store CSP definition
+a1656_bas_h_csp_definition_example = Format: Content-Security-Policy: default-src https: 'unsafe-inline'; frame-ancestors 'none';
+a1656_bas_h_fpp = Feature / Permissions Policy
+a1656_bas_h_fpp_noeditor = Use input fields instead of selection
+a1656_bas_h_fpp_editor = Define properties
+a1656_bas_h_fpp_definition_f = Store feature definition
+a1656_bas_h_fpp_definition_p = Store permission definition
+a1656_bas_h_fpp_definition_f_example = Format: Feature Policy: camera 'none'; microphone self;
+a1656_bas_h_fpp_definition_p_example = Format: Permissions-Policy: camera = (), microphone = (self)
+
+a1656_bas_h_csp_default = default-src
+a1656_bas_h_csp_img = img-src
+a1656_bas_h_csp_media = media-src
+a1656_bas_h_csp_font = font-src
+a1656_bas_h_csp_script = script-src
+a1656_bas_h_csp_style = style-src
+a1656_bas_h_csp_object = object-src
+a1656_bas_h_csp_form = form-action
+a1656_bas_h_csp_frame = frame-src
+a1656_bas_h_csp_frameanc = frame-ancestors
+
+a1656_bas_h_fpp_camera = camera
+a1656_bas_h_fpp_geolocation = geolocation
+a1656_bas_h_fpp_gyro = gyroscope
+a1656_bas_h_fpp_magnet = magnetometer
+a1656_bas_h_fpp_micro = microphone
+a1656_bas_h_fpp_usb = usb
+a1656_bas_h_fpp_docdomain = document-domain
+a1656_bas_h_fpp_fullscreen = fullscreen
+a1656_bas_h_fpp_payment = payment
+
+a1656_bas_h_editor_https = https:
+a1656_bas_h_editor_data = data:
+a1656_bas_h_editor_blob = blob:
+a1656_bas_h_editor_self = self
+a1656_bas_h_editor_inline = unsafe-inline
+a1656_bas_h_editor_eval = unsafe-eval
+a1656_bas_h_editor_hashes = unsafe-hashes
+a1656_bas_h_editor_none = none
+
+
+# Other requirements
+a1656_example = example
+a1656_examples = Examples ...
+a1656_overview = Overview:
+
+a1656_search_all = all
+a1656_search_noselection = - no selection -
+a1656_search_sort = View
+a1656_search_sort_onlyactive = only active entries (online)
+a1656_search_sort_onlyinactive = only deactivated entries (offline)
+a1656_search_keyword = Search term
+a1656_search_submit = search
+a1656_search_reset = Reset search
+a1656_search_notfound = No entries were found.
+a1656_search_more = more options
+a1656_search_cat = Category
+a1656_search_maincat = Main Category
+a1656_search_archive = Show archive entries only
+
+a1656_edit = change
+a1656_delete = delete
+a1656_online = online
+a1656_offline = offline
+a1656_new = add
+a1656_save = Save
+a1656_yes = yes
+a1656_no = no
+a1656_showbox = show / hide
+a1656_showcss = show / hide CSS
+
+a1656_settings_saved = The settings have been saved!
+a1656_module_saved = The module has been installed!
+a1656_error = An error has occurred!
+a1656_notice = Notice
+a1656_entry_saved = Entry saved
+a1656_entry_deleted = Entry deleted
+a1656_error_saved = Error while saving
+a1656_error_deleted = Error deleting
+
+a1656_dir = directory
+a1656_destdir = destination directory
+a1656_notdeleted = could not be deleted
+a1656_notcopyed = could not be copied
+a1656_deletemodule = Please manually delete modules installed via the add-on.
+a1656_emptyfield = empty or invalid
+a1656_charslenfield = is too short
+
+a1656_js_confirm = Do you really want to install the module?
