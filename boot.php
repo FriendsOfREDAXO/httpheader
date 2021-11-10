@@ -2,7 +2,7 @@
 /*
 	Redaxo-Addon HTTP-Header
 	Boot (weitere Konfigurationen)
-	v1.0
+	v1.1
 	by Falko Müller @ 2021
 	package: redaxo5
 */
@@ -31,12 +31,16 @@ $config = rex_addon::get($mypage)->getConfig('config');			//Addon-Konfig einlade
 global $a1656_mypage;
 $a1656_mypage = $mypage;
 
+global $a1656_darkmode;
+$a1656_darkmode = (rex_string::versionCompare(rex::getVersion(), '5.13.0-dev', '>=')) ? true : false;
+
 
 //Backendfunktionen
 if (rex::isBackend() && rex::getUser()):
 	require_once(rex_path::addon($mypage)."/functions/functions.inc.php");
 
 	rex_view::addCssFile($this->getAssetsUrl('style.css'));
+	if ($a1656_darkmode) { rex_view::addCssFile($this->getAssetsUrl('style-darkmode.css')); }
 endif;
 
 

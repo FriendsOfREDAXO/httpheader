@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document for HTTP-Header - DarkMode */
+/* v1.1 */
+
+
+@media (prefers-color-scheme: dark){
+	
+	body:not(.rex-theme-light) .boxed-group { background: #242f3c; }
+	
+	body:not(.rex-theme-light) .hh-modal .modal-header { background: inherit; }
+
+	body:not(.rex-theme-light) .checkbox.toggle label input,
+	body:not(.rex-theme-light) .radio.toggle label input
+		{ background: #202b35; }
+	body:not(.rex-theme-light) .checkbox.toggle label input::after, 
+	body:not(.rex-theme-light) .radio.toggle label input::after, 
+	body:not(.rex-theme-light) .radio.switch label input::before
+		{ background: #CCC; }
+
+	body:not(.rex-theme-light) .checkbox.toggle label input:checked,
+	body:not(.rex-theme-light) .radio.toggle label input:checked 
+		{ background: #409be4; }
+	body:not(.rex-theme-light) .checkbox.toggle label input:checked::after, 
+	body:not(.rex-theme-light) .radio.toggle label input:checked::after, 
+	body:not(.rex-theme-light) .radio.switch label input:checked::before
+		{ background: #EEE; }
+
+}
