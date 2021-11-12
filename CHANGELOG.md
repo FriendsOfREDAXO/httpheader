@@ -4,6 +4,9 @@ HTTP-Header
 Changelog
 ---------
 
+<b>Version 1.1.1</b>
+- Korrektur DarkMode
+
 <b>Version 1.1</b>
 - Anpassung für DarkMode
 
