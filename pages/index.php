@@ -123,12 +123,33 @@ a.modallink { cursor: pointer; }
 
 
 <?php if (rex_string::versionCompare(rex::getVersion(), '5.13.0-dev', '>=')): ?>
+body.rex-theme-dark .cspblock:hover { background: #1f3d3c; }
+body.rex-theme-dark .boxed-group { background: rgba(54,81,80, 0.45); }
+body.rex-theme-dark .hh-modal .modal-header { background: inherit; }
+
+body.rex-theme-dark .checkbox.toggle label input,
+body.rex-theme-dark .radio.toggle label input
+	{ background: #202b35; }
+body.rex-theme-dark .checkbox.toggle label input::after, 
+body.rex-theme-dark .radio.toggle label input::after, 
+body.rex-theme-dark .radio.switch label input::before
+	{ background: #CCC; }
+
+body.rex-theme-dark .checkbox.toggle label input:checked,
+body.rex-theme-dark .radio.toggle label input:checked 
+	{ background: #409be4; }
+body.rex-theme-dark .checkbox.toggle label input:checked::after, 
+body.rex-theme-dark .radio.toggle label input:checked::after, 
+body.rex-theme-dark .radio.switch label input:checked::before
+	{ background: #EEE; }
+
+	
+
 @media (prefers-color-scheme: dark){
 	
 	body:not(.rex-theme-light) .cspblock:hover { background: #1f3d3c; }
 	body:not(.rex-theme-light) .boxed-group { background: rgba(54,81,80, 0.45); }
 	body:not(.rex-theme-light) .hh-modal .modal-header { background: inherit; }
-
 
 	body:not(.rex-theme-light) .checkbox.toggle label input,
 	body:not(.rex-theme-light) .radio.toggle label input
