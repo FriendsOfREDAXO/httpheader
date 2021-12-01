@@ -4,6 +4,9 @@ HTTP-Header
 Changelog
 ---------
 
+<b>Version 1.1.2</b>
+- DarkMode für manuelle Theme-Auswahl hinzugefügt
+
 <b>Version 1.1.1</b>
 - Korrektur DarkMode
 
