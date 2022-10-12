@@ -200,19 +200,19 @@ $config = $this->getConfig('config');
             <!-- connection keep-alive -->
             <div class="boxed-group">
                 <dl class="rex-form-group form-group">
-                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_connection'); ?> <a data-toggle="modal" data-target="#httpmodal" data-title="Connection: keep-alive" data-content="#datacontent-conn"><i class="rex-icon fa-question-circle"></i></a></label></dt>
+                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_connection'); ?> <a class="modallink" data-toggle="modal" data-target="#httpmodal" data-title="Connection: keep-alive" data-content="#datacontent-conn"><i class="rex-icon fa-question-circle"></i></a></label></dt>
                     <dd>
-                        <div class="checkbox">
-                        <label for="h_connection">
-                            <input name="h_connection" type="checkbox" id="h_connection" class="toggle" value="checked" <?php echo @$config['h_connection']; ?> /> <?php echo $this->i18n('a1656_bas_active'); ?>
+                        <div class="checkbox toggle">
+                        <label for="h_connection toggle">
+                            <input name="h_connection" type="checkbox" id="h_connection" value="checked" <?php echo @$config['h_connection']; ?> /> <?php echo $this->i18n('a1656_bas_active'); ?>
                         </label>
                         </div>
                     </dd>
                     
                    
-                   <div class="checkbox includebackend">
+                   <div class="checkbox toggle includebackend">
                         <label for="h_connection_be">
-                            <input name="h_connection_be" type="checkbox" id="h_connection_be" class="toggle" value="checked" <?php echo @$config['h_connection_be']; ?> /> <?php echo $this->i18n('a1656_bas_includebackend'); ?>
+                            <input name="h_connection_be" type="checkbox" id="h_connection_be" value="checked" <?php echo @$config['h_connection_be']; ?> /> <?php echo $this->i18n('a1656_bas_includebackend'); ?>
                         </label>
                    </div> 
                 </dl>
@@ -223,19 +223,19 @@ $config = $this->getConfig('config');
           <!-- vary acept-encoding -->
             <div class="boxed-group">
                 <dl class="rex-form-group form-group">
-                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_vary'); ?> <a data-toggle="modal" data-target="#httpmodal" data-title="Vary: Accept-Encoding" data-content="#datacontent-vary"><i class="rex-icon fa-question-circle"></i></a></label></dt>
+                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_vary'); ?> <a class="modallink" data-toggle="modal" data-target="#httpmodal" data-title="Vary: Accept-Encoding" data-content="#datacontent-vary"><i class="rex-icon fa-question-circle"></i></a></label></dt>
                     <dd>
-                        <div class="checkbox">
+                        <div class="checkbox toggle">
                         <label for="h_vary">
-                            <input name="h_vary" type="checkbox" id="h_vary" class="toggle" value="checked" <?php echo @$config['h_vary']; ?> /> <?php echo $this->i18n('a1656_bas_active'); ?>
+                            <input name="h_vary" type="checkbox" id="h_vary"  value="checked" <?php echo @$config['h_vary']; ?> /> <?php echo $this->i18n('a1656_bas_active'); ?>
                         </label>
                         </div>
                     </dd>
                     
                    
-                   <div class="checkbox includebackend">
+                   <div class="checkbox toggle includebackend">
                         <label for="h_vary_be">
-                            <input name="h_vary_be" type="checkbox" id="h_vary_be" class="toggle" value="checked" <?php echo @$config['h_vary_be']; ?> /> <?php echo $this->i18n('a1656_bas_includebackend'); ?>
+                            <input name="h_vary_be" type="checkbox" id="h_vary_be"  value="checked" <?php echo @$config['h_vary_be']; ?> /> <?php echo $this->i18n('a1656_bas_includebackend'); ?>
                         </label>
                    </div> 
                 </dl>
@@ -251,19 +251,19 @@ $config = $this->getConfig('config');
             <!-- remove server -->
             <div class="boxed-group">
                 <dl class="rex-form-group form-group">
-                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_server'); ?> <a data-toggle="modal" data-target="#httpmodal" data-title="Serverkennung" data-content="#datacontent-server"><i class="rex-icon fa-question-circle"></i></a></label></dt>
+                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_server'); ?> <a class="modallink" data-toggle="modal" data-target="#httpmodal" data-title="Serverkennung" data-content="#datacontent-server"><i class="rex-icon fa-question-circle"></i></a></label></dt>
                     <dd>
-                        <div class="checkbox">
+                        <div class="checkbox toggle">
                         <label for="h_server">
-                            <input name="h_server" type="checkbox" id="h_server" class="toggle" value="checked" <?php echo @$config['h_server']; ?> /> <?php echo $this->i18n('a1656_bas_remove'); ?>
+                            <input name="h_server" type="checkbox" id="h_server"  value="checked" <?php echo @$config['h_server']; ?> /> <?php echo $this->i18n('a1656_bas_remove'); ?>
                         </label>
                         </div>
                     </dd>
                     
                    
-                   <div class="checkbox includebackend">
+                   <div class="checkbox toggle includebackend">
                         <label for="h_server_be">
-                            <input name="h_server_be" type="checkbox" id="h_server_be" class="toggle" value="checked" <?php echo @$config['h_server_be']; ?> /> <?php echo $this->i18n('a1656_bas_includebackend'); ?>
+                            <input name="h_server_be" type="checkbox" id="h_server_be"  value="checked" <?php echo @$config['h_server_be']; ?> /> <?php echo $this->i18n('a1656_bas_includebackend'); ?>
                         </label>
                    </div> 
                 </dl>
@@ -274,19 +274,19 @@ $config = $this->getConfig('config');
           <!-- remove x-powered-by -->
             <div class="boxed-group">
                 <dl class="rex-form-group form-group">
-                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_poweredby'); ?> <a data-toggle="modal" data-target="#httpmodal" data-title="X-Powered-By" data-content="#datacontent-xpowered"><i class="rex-icon fa-question-circle"></i></a></label></dt>
+                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_poweredby'); ?> <a class="modallink" data-toggle="modal" data-target="#httpmodal" data-title="X-Powered-By" data-content="#datacontent-xpowered"><i class="rex-icon fa-question-circle"></i></a></label></dt>
                     <dd>
-                        <div class="checkbox">
+                        <div class="checkbox toggle">
                         <label for="h_poweredby">
-                            <input name="h_poweredby" type="checkbox" id="h_poweredby" class="toggle" value="checked" <?php echo @$config['h_poweredby']; ?> /> <?php echo $this->i18n('a1656_bas_remove'); ?>
+                            <input name="h_poweredby" type="checkbox" id="h_poweredby"  value="checked" <?php echo @$config['h_poweredby']; ?> /> <?php echo $this->i18n('a1656_bas_remove'); ?>
                         </label>
                         </div>
                     </dd>
                     
                    
-                   <div class="checkbox includebackend">
+                   <div class="checkbox toggle includebackend">
                         <label for="h_poweredby_be">
-                            <input name="h_poweredby_be" type="checkbox" id="h_poweredby_be" class="toggle" value="checked" <?php echo @$config['h_poweredby_be']; ?> /> <?php echo $this->i18n('a1656_bas_includebackend'); ?>
+                            <input name="h_poweredby_be" type="checkbox" id="h_poweredby_be"  value="checked" <?php echo @$config['h_poweredby_be']; ?> /> <?php echo $this->i18n('a1656_bas_includebackend'); ?>
                         </label>
                    </div> 
                 </dl>
@@ -296,19 +296,19 @@ $config = $this->getConfig('config');
             <!-- X-Content-Type-Options -->
             <div class="boxed-group">
                 <dl class="rex-form-group form-group">
-                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_contenttype'); ?> <a data-toggle="modal" data-target="#httpmodal" data-title="X-Content-Type-Options" data-content="#datacontent-xcontent"><i class="rex-icon fa-question-circle"></i></a></label></dt>
+                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_contenttype'); ?> <a class="modallink" data-toggle="modal" data-target="#httpmodal" data-title="X-Content-Type-Options" data-content="#datacontent-xcontent"><i class="rex-icon fa-question-circle"></i></a></label></dt>
                     <dd>
-                        <div class="checkbox">
+                        <div class="checkbox toggle">
                         <label for="h_contenttype">
-                            <input name="h_contenttype" type="checkbox" id="h_contenttype" class="toggle" value="checked" <?php echo @$config['h_contenttype']; ?> /> <?php echo $this->i18n('a1656_bas_active'); ?>
+                            <input name="h_contenttype" type="checkbox" id="h_contenttype"  value="checked" <?php echo @$config['h_contenttype']; ?> /> <?php echo $this->i18n('a1656_bas_active'); ?>
                         </label>
                         </div>
                     </dd>
                     
                    
-                   <div class="checkbox includebackend">
+                   <div class="checkbox toggle includebackend">
                         <label for="h_contenttype_be">
-                            <input name="h_contenttype_be" type="checkbox" id="h_contenttype_be" class="toggle" value="checked" <?php echo @$config['h_contenttype_be']; ?> /> <?php echo $this->i18n('a1656_bas_includebackend'); ?>
+                            <input name="h_contenttype_be" type="checkbox" id="h_contenttype_be"  value="checked" <?php echo @$config['h_contenttype_be']; ?> /> <?php echo $this->i18n('a1656_bas_includebackend'); ?>
                         </label>
                    </div> 
                 </dl>
@@ -319,11 +319,11 @@ $config = $this->getConfig('config');
           <!-- X-Frame-Options -->
             <div class="boxed-group">
                 <dl class="rex-form-group form-group">
-                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_frame'); ?> <a data-toggle="modal" data-target="#httpmodal" data-title="X-Frame-Options" data-content="#datacontent-xframe"><i class="rex-icon fa-question-circle"></i></a></label></dt>
+                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_frame'); ?> <a class="modallink" data-toggle="modal" data-target="#httpmodal" data-title="X-Frame-Options" data-content="#datacontent-xframe"><i class="rex-icon fa-question-circle"></i></a></label></dt>
                     <dd>
-                        <div class="checkbox">
+                        <div class="checkbox toggle">
                         <label for="h_frame">
-                            <input name="h_frame" type="checkbox" id="h_frame" class="toggle" value="checked" <?php echo @$config['h_frame']; ?> data-opener="#h_frame_option" /> <?php echo $this->i18n('a1656_bas_active'); ?>
+                            <input name="h_frame" type="checkbox" id="h_frame"  value="checked" <?php echo @$config['h_frame']; ?> data-opener="#h_frame_option" /> <?php echo $this->i18n('a1656_bas_active'); ?>
                         </label>
                         </div>
                     </dd>
@@ -348,9 +348,9 @@ $config = $this->getConfig('config');
                 </div>
                
                 
-                <div class="checkbox includebackend">
+                <div class="checkbox toggle includebackend">
                     <label for="h_frame_be">
-                        <input name="h_frame_be" type="checkbox" id="h_frame_be" class="toggle" value="checked" <?php echo @$config['h_frame_be']; ?> /> <?php echo $this->i18n('a1656_bas_includebackend'); ?>
+                        <input name="h_frame_be" type="checkbox" id="h_frame_be"  value="checked" <?php echo @$config['h_frame_be']; ?> /> <?php echo $this->i18n('a1656_bas_includebackend'); ?>
                     </label>
                 </div> 
             </div>
@@ -360,11 +360,11 @@ $config = $this->getConfig('config');
           <!-- X-XSS-Protection -->
             <div class="boxed-group">
                 <dl class="rex-form-group form-group">
-                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_xss'); ?> <a data-toggle="modal" data-target="#httpmodal" data-title="X-XSS-Protection" data-content="#datacontent-xxss"><i class="rex-icon fa-question-circle"></i></a></label></dt>
+                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_xss'); ?> <a class="modallink" data-toggle="modal" data-target="#httpmodal" data-title="X-XSS-Protection" data-content="#datacontent-xxss"><i class="rex-icon fa-question-circle"></i></a></label></dt>
                     <dd>
-                        <div class="checkbox">
+                        <div class="checkbox toggle">
                         <label for="h_xss">
-                            <input name="h_xss" type="checkbox" id="h_xss" class="toggle" value="checked" <?php echo @$config['h_xss']; ?> data-opener="#h_xss_block" /> <?php echo $this->i18n('a1656_bas_active'); ?>
+                            <input name="h_xss" type="checkbox" id="h_xss"  value="checked" <?php echo @$config['h_xss']; ?> data-opener="#h_xss_block" /> <?php echo $this->i18n('a1656_bas_active'); ?>
                         </label>
                         </div>
                     </dd>
@@ -374,9 +374,9 @@ $config = $this->getConfig('config');
                 <dl class="rex-form-group form-group">
                     <dt><label for="" class="nobold"><?php echo $this->i18n('a1656_bas_h_xss_block'); ?></label></dt>
                     <dd>
-                        <div class="checkbox">
+                        <div class="checkbox toggle">
                         <label for="h_xss_block">
-                            <input name="h_xss_block" type="checkbox" id="h_xss_block" class="toggle" value="checked" <?php echo @$config['h_xss_block']; ?> /> <?php echo $this->i18n('a1656_bas_active'); ?>
+                            <input name="h_xss_block" type="checkbox" id="h_xss_block"  value="checked" <?php echo @$config['h_xss_block']; ?> /> <?php echo $this->i18n('a1656_bas_active'); ?>
                         </label>
                         </div>
                     </dd>
@@ -384,9 +384,9 @@ $config = $this->getConfig('config');
                 </div>
                
                 
-                <div class="checkbox includebackend">
+                <div class="checkbox toggle includebackend">
                     <label for="h_xss_be">
-                        <input name="h_xss_be" type="checkbox" id="h_xss_be" class="toggle" value="checked" <?php echo @$config['h_xss_be']; ?> /> <?php echo $this->i18n('a1656_bas_includebackend'); ?>
+                        <input name="h_xss_be" type="checkbox" id="h_xss_be"  value="checked" <?php echo @$config['h_xss_be']; ?> /> <?php echo $this->i18n('a1656_bas_includebackend'); ?>
                     </label>
                 </div> 
             </div>
@@ -396,11 +396,11 @@ $config = $this->getConfig('config');
           <!-- Referrer-Policy -->
             <div class="boxed-group">
                 <dl class="rex-form-group form-group">
-                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_referer'); ?> <a data-toggle="modal" data-target="#httpmodal" data-title="Referrer-Policy" data-content="#datacontent-referer"><i class="rex-icon fa-question-circle"></i></a></label></dt>
+                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_referer'); ?> <a class="modallink" data-toggle="modal" data-target="#httpmodal" data-title="Referrer-Policy" data-content="#datacontent-referer"><i class="rex-icon fa-question-circle"></i></a></label></dt>
                     <dd>
-                        <div class="checkbox">
+                        <div class="checkbox toggle">
                         <label for="h_referer">
-                            <input name="h_referer" type="checkbox" id="h_referer" class="toggle" value="checked" <?php echo @$config['h_referer']; ?> data-opener="#h_referer_option" /> <?php echo $this->i18n('a1656_bas_active'); ?>
+                            <input name="h_referer" type="checkbox" id="h_referer"  value="checked" <?php echo @$config['h_referer']; ?> data-opener="#h_referer_option" /> <?php echo $this->i18n('a1656_bas_active'); ?>
                         </label>
                         </div>
                     </dd>
@@ -425,9 +425,9 @@ $config = $this->getConfig('config');
                 </div>
                
                 
-                <div class="checkbox includebackend">
+                <div class="checkbox toggle includebackend">
                     <label for="h_referer_be">
-                        <input name="h_referer_be" type="checkbox" id="h_referer_be" class="toggle" value="checked" <?php echo @$config['h_referer_be']; ?> /> <?php echo $this->i18n('a1656_bas_includebackend'); ?>
+                        <input name="h_referer_be" type="checkbox" id="h_referer_be"  value="checked" <?php echo @$config['h_referer_be']; ?> /> <?php echo $this->i18n('a1656_bas_includebackend'); ?>
                     </label>
                 </div> 
             </div>
@@ -437,11 +437,11 @@ $config = $this->getConfig('config');
           <!-- Strict-Transport-Security -->
             <div class="boxed-group hh-risk">
                 <dl class="rex-form-group form-group">
-                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_transport'); ?> <a data-toggle="modal" data-target="#httpmodal" data-title="Strict-Transport-Security" data-content="#datacontent-trans"><i class="rex-icon fa-question-circle"></i></a></label></dt>
+                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_transport'); ?> <a class="modallink" data-toggle="modal" data-target="#httpmodal" data-title="Strict-Transport-Security" data-content="#datacontent-trans"><i class="rex-icon fa-question-circle"></i></a></label></dt>
                     <dd>
-                        <div class="checkbox">
+                        <div class="checkbox toggle">
                         <label for="h_transport">
-                            <input name="h_transport" type="checkbox" id="h_transport" class="toggle" value="checked" <?php echo @$config['h_transport']; ?> data-opener="#h_transport_option" /> <?php echo $this->i18n('a1656_bas_active'); ?>
+                            <input name="h_transport" type="checkbox" id="h_transport"  value="checked" <?php echo @$config['h_transport']; ?> data-opener="#h_transport_option" /> <?php echo $this->i18n('a1656_bas_active'); ?>
                         </label>
                         </div>
                     </dd>
@@ -458,9 +458,9 @@ $config = $this->getConfig('config');
                 <dl class="rex-form-group form-group">
                     <dt><label for="" class="nobold"><?php echo $this->i18n('a1656_bas_h_transport_subdomains'); ?></label></dt>
                     <dd>
-                        <div class="checkbox">
+                        <div class="checkbox toggle">
                         <label for="h_transport_subdomains">
-                            <input name="h_transport_subdomains" type="checkbox" id="h_transport_subdomains" class="toggle" value="checked" <?php echo @$config['h_transport_subdomains']; ?> /> <?php echo $this->i18n('a1656_bas_active'); ?>
+                            <input name="h_transport_subdomains" type="checkbox" id="h_transport_subdomains"  value="checked" <?php echo @$config['h_transport_subdomains']; ?> /> <?php echo $this->i18n('a1656_bas_active'); ?>
                         </label>
                         </div>
                     </dd>
@@ -468,9 +468,9 @@ $config = $this->getConfig('config');
                 </div>
                
                 
-                <div class="checkbox includebackend">
+                <div class="checkbox toggle includebackend">
                     <label for="h_transport_be">
-                        <input name="h_transport_be" type="checkbox" id="h_transport_be" class="toggle" value="checked" <?php echo @$config['h_transport_be']; ?> /> <?php echo $this->i18n('a1656_bas_includebackend'); ?>
+                        <input name="h_transport_be" type="checkbox" id="h_transport_be"  value="checked" <?php echo @$config['h_transport_be']; ?> /> <?php echo $this->i18n('a1656_bas_includebackend'); ?>
                     </label>
                 </div> 
             </div>
@@ -480,11 +480,11 @@ $config = $this->getConfig('config');
             <!-- Content-Security-Policy -->
             <div class="boxed-group hh-highrisk">
                 <dl class="rex-form-group form-group">
-                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_csp'); ?> <a data-toggle="modal" data-target="#httpmodal" data-title="Content-Security-Policy" data-content="#datacontent-csp"><i class="rex-icon fa-question-circle"></i></a></label></dt>
+                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_csp'); ?> <a class="modallink" data-toggle="modal" data-target="#httpmodal" data-title="Content-Security-Policy" data-content="#datacontent-csp"><i class="rex-icon fa-question-circle"></i></a></label></dt>
                     <dd>
-                        <div class="checkbox">
+                        <div class="checkbox toggle">
                         <label for="h_csp">
-                            <input name="h_csp" type="checkbox" id="h_csp" class="toggle" value="checked" <?php echo @$config['h_csp']; ?> data-opener="#h_csp_option" /> <?php echo $this->i18n('a1656_bas_active'); ?>
+                            <input name="h_csp" type="checkbox" id="h_csp"  value="checked" <?php echo @$config['h_csp']; ?> data-opener="#h_csp_option" /> <?php echo $this->i18n('a1656_bas_active'); ?>
                         </label>
                         </div>
                     </dd>
@@ -494,9 +494,9 @@ $config = $this->getConfig('config');
                 <dl class="rex-form-group form-group">
                     <dt><label for="" class="nobold"><?php echo $this->i18n('a1656_bas_h_csp_noeditor'); ?></label></dt>
                     <dd>
-                        <div class="checkbox">
+                        <div class="checkbox toggle">
                         <label for="h_csp_noeditor">
-                            <input name="h_csp_noeditor" type="checkbox" id="h_csp_noeditor" class="toggle" value="checked" <?php echo @$config['h_csp_noeditor']; ?> /> <?php echo $this->i18n('a1656_yes'); ?>
+                            <input name="h_csp_noeditor" type="checkbox" id="h_csp_noeditor"  value="checked" <?php echo @$config['h_csp_noeditor']; ?> /> <?php echo $this->i18n('a1656_yes'); ?>
                         </label>
                         </div>
                     </dd>
@@ -529,58 +529,58 @@ $config = $this->getConfig('config');
                             
                                 <ul>
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_default_https">
-                                            <input name="h_csp_default_https" type="checkbox" id="h_csp_default_https" class="toggle" value="checked" <?php echo @$config['h_csp_default_https']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_https'); ?>
+                                            <input name="h_csp_default_https" type="checkbox" id="h_csp_default_https"  value="checked" <?php echo @$config['h_csp_default_https']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_https'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_default_data">
-                                            <input name="h_csp_default_data" type="checkbox" id="h_csp_default_data" class="toggle" value="checked" <?php echo @$config['h_csp_default_data']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_data'); ?>
+                                            <input name="h_csp_default_data" type="checkbox" id="h_csp_default_data"  value="checked" <?php echo @$config['h_csp_default_data']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_data'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_default_blob">
-                                            <input name="h_csp_default_blob" type="checkbox" id="h_csp_default_blob" class="toggle" value="checked" <?php echo @$config['h_csp_default_blob']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_blob'); ?>
+                                            <input name="h_csp_default_blob" type="checkbox" id="h_csp_default_blob"  value="checked" <?php echo @$config['h_csp_default_blob']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_blob'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_default_self">
-                                            <input name="h_csp_default_self" type="checkbox" id="h_csp_default_self" class="toggle" value="checked" <?php echo @$config['h_csp_default_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
+                                            <input name="h_csp_default_self" type="checkbox" id="h_csp_default_self"  value="checked" <?php echo @$config['h_csp_default_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_default_inline">
-                                            <input name="h_csp_default_inline" type="checkbox" id="h_csp_default_inline" class="toggle" value="checked" <?php echo @$config['h_csp_default_inline']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_inline'); ?>
+                                            <input name="h_csp_default_inline" type="checkbox" id="h_csp_default_inline"  value="checked" <?php echo @$config['h_csp_default_inline']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_inline'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_default_eval">
-                                            <input name="h_csp_default_eval" type="checkbox" id="h_csp_default_eval" class="toggle" value="checked" <?php echo @$config['h_csp_default_eval']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_eval'); ?>
+                                            <input name="h_csp_default_eval" type="checkbox" id="h_csp_default_eval"  value="checked" <?php echo @$config['h_csp_default_eval']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_eval'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_default_hashes">
-                                            <input name="h_csp_default_hashes" type="checkbox" id="h_csp_default_hashes" class="toggle" value="checked" <?php echo @$config['h_csp_default_hashes']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_hashes'); ?>
+                                            <input name="h_csp_default_hashes" type="checkbox" id="h_csp_default_hashes"  value="checked" <?php echo @$config['h_csp_default_hashes']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_hashes'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_default_none">
-                                            <input name="h_csp_default_none" type="checkbox" id="h_csp_default_none" class="toggle" value="checked" <?php echo @$config['h_csp_default_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
+                                            <input name="h_csp_default_none" type="checkbox" id="h_csp_default_none"  value="checked" <?php echo @$config['h_csp_default_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
                                     </li> 
@@ -594,58 +594,58 @@ $config = $this->getConfig('config');
                             
                                 <ul>
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_img_https">
-                                            <input name="h_csp_img_https" type="checkbox" id="h_csp_img_https" class="toggle" value="checked" <?php echo @$config['h_csp_img_https']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_https'); ?>
+                                            <input name="h_csp_img_https" type="checkbox" id="h_csp_img_https"  value="checked" <?php echo @$config['h_csp_img_https']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_https'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_img_data">
-                                            <input name="h_csp_img_data" type="checkbox" id="h_csp_img_data" class="toggle" value="checked" <?php echo @$config['h_csp_img_data']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_data'); ?>
+                                            <input name="h_csp_img_data" type="checkbox" id="h_csp_img_data"  value="checked" <?php echo @$config['h_csp_img_data']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_data'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_img_blob">
-                                            <input name="h_csp_img_blob" type="checkbox" id="h_csp_img_blob" class="toggle" value="checked" <?php echo @$config['h_csp_img_blob']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_blob'); ?>
+                                            <input name="h_csp_img_blob" type="checkbox" id="h_csp_img_blob"  value="checked" <?php echo @$config['h_csp_img_blob']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_blob'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_img_self">
-                                            <input name="h_csp_img_self" type="checkbox" id="h_csp_img_self" class="toggle" value="checked" <?php echo @$config['h_csp_img_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
+                                            <input name="h_csp_img_self" type="checkbox" id="h_csp_img_self"  value="checked" <?php echo @$config['h_csp_img_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_img_inline">
-                                            <input name="h_csp_img_inline" type="checkbox" id="h_csp_img_inline" class="toggle" value="checked" <?php echo @$config['h_csp_img_inline']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_inline'); ?>
+                                            <input name="h_csp_img_inline" type="checkbox" id="h_csp_img_inline"  value="checked" <?php echo @$config['h_csp_img_inline']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_inline'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_img_eval">
-                                            <input name="h_csp_img_eval" type="checkbox" id="h_csp_img_eval" class="toggle" value="checked" <?php echo @$config['h_csp_img_eval']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_eval'); ?>
+                                            <input name="h_csp_img_eval" type="checkbox" id="h_csp_img_eval"  value="checked" <?php echo @$config['h_csp_img_eval']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_eval'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_img_hashes">
-                                            <input name="h_csp_img_hashes" type="checkbox" id="h_csp_img_hashes" class="toggle" value="checked" <?php echo @$config['h_csp_img_hashes']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_hashes'); ?>
+                                            <input name="h_csp_img_hashes" type="checkbox" id="h_csp_img_hashes"  value="checked" <?php echo @$config['h_csp_img_hashes']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_hashes'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_img_none">
-                                            <input name="h_csp_img_none" type="checkbox" id="h_csp_img_none" class="toggle" value="checked" <?php echo @$config['h_csp_img_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
+                                            <input name="h_csp_img_none" type="checkbox" id="h_csp_img_none"  value="checked" <?php echo @$config['h_csp_img_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
                                     </li> 
@@ -659,58 +659,58 @@ $config = $this->getConfig('config');
                             
                                 <ul>
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_media_https">
-                                            <input name="h_csp_media_https" type="checkbox" id="h_csp_media_https" class="toggle" value="checked" <?php echo @$config['h_csp_media_https']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_https'); ?>
+                                            <input name="h_csp_media_https" type="checkbox" id="h_csp_media_https"  value="checked" <?php echo @$config['h_csp_media_https']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_https'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_media_data">
-                                            <input name="h_csp_media_data" type="checkbox" id="h_csp_media_data" class="toggle" value="checked" <?php echo @$config['h_csp_media_data']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_data'); ?>
+                                            <input name="h_csp_media_data" type="checkbox" id="h_csp_media_data"  value="checked" <?php echo @$config['h_csp_media_data']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_data'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_media_blob">
-                                            <input name="h_csp_media_blob" type="checkbox" id="h_csp_media_blob" class="toggle" value="checked" <?php echo @$config['h_csp_media_blob']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_blob'); ?>
+                                            <input name="h_csp_media_blob" type="checkbox" id="h_csp_media_blob"  value="checked" <?php echo @$config['h_csp_media_blob']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_blob'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_media_self">
-                                            <input name="h_csp_media_self" type="checkbox" id="h_csp_media_self" class="toggle" value="checked" <?php echo @$config['h_csp_media_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
+                                            <input name="h_csp_media_self" type="checkbox" id="h_csp_media_self"  value="checked" <?php echo @$config['h_csp_media_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_media_inline">
-                                            <input name="h_csp_media_inline" type="checkbox" id="h_csp_media_inline" class="toggle" value="checked" <?php echo @$config['h_csp_media_inline']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_inline'); ?>
+                                            <input name="h_csp_media_inline" type="checkbox" id="h_csp_media_inline"  value="checked" <?php echo @$config['h_csp_media_inline']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_inline'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_media_eval">
-                                            <input name="h_csp_media_eval" type="checkbox" id="h_csp_media_eval" class="toggle" value="checked" <?php echo @$config['h_csp_media_eval']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_eval'); ?>
+                                            <input name="h_csp_media_eval" type="checkbox" id="h_csp_media_eval"  value="checked" <?php echo @$config['h_csp_media_eval']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_eval'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_media_hashes">
-                                            <input name="h_csp_media_hashes" type="checkbox" id="h_csp_media_hashes" class="toggle" value="checked" <?php echo @$config['h_csp_media_hashes']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_hashes'); ?>
+                                            <input name="h_csp_media_hashes" type="checkbox" id="h_csp_media_hashes"  value="checked" <?php echo @$config['h_csp_media_hashes']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_hashes'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_media_none">
-                                            <input name="h_csp_media_none" type="checkbox" id="h_csp_media_none" class="toggle" value="checked" <?php echo @$config['h_csp_media_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
+                                            <input name="h_csp_media_none" type="checkbox" id="h_csp_media_none"  value="checked" <?php echo @$config['h_csp_media_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
                                     </li> 
@@ -724,58 +724,58 @@ $config = $this->getConfig('config');
                             
                                 <ul>
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_font_https">
-                                            <input name="h_csp_font_https" type="checkbox" id="h_csp_font_https" class="toggle" value="checked" <?php echo @$config['h_csp_font_https']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_https'); ?>
+                                            <input name="h_csp_font_https" type="checkbox" id="h_csp_font_https"  value="checked" <?php echo @$config['h_csp_font_https']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_https'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_font_data">
-                                            <input name="h_csp_font_data" type="checkbox" id="h_csp_font_data" class="toggle" value="checked" <?php echo @$config['h_csp_font_data']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_data'); ?>
+                                            <input name="h_csp_font_data" type="checkbox" id="h_csp_font_data"  value="checked" <?php echo @$config['h_csp_font_data']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_data'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_font_blob">
-                                            <input name="h_csp_font_blob" type="checkbox" id="h_csp_font_blob" class="toggle" value="checked" <?php echo @$config['h_csp_font_blob']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_blob'); ?>
+                                            <input name="h_csp_font_blob" type="checkbox" id="h_csp_font_blob"  value="checked" <?php echo @$config['h_csp_font_blob']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_blob'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_font_self">
-                                            <input name="h_csp_font_self" type="checkbox" id="h_csp_font_self" class="toggle" value="checked" <?php echo @$config['h_csp_font_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
+                                            <input name="h_csp_font_self" type="checkbox" id="h_csp_font_self"  value="checked" <?php echo @$config['h_csp_font_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_font_inline">
-                                            <input name="h_csp_font_inline" type="checkbox" id="h_csp_font_inline" class="toggle" value="checked" <?php echo @$config['h_csp_font_inline']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_inline'); ?>
+                                            <input name="h_csp_font_inline" type="checkbox" id="h_csp_font_inline"  value="checked" <?php echo @$config['h_csp_font_inline']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_inline'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_font_eval">
-                                            <input name="h_csp_font_eval" type="checkbox" id="h_csp_font_eval" class="toggle" value="checked" <?php echo @$config['h_csp_font_eval']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_eval'); ?>
+                                            <input name="h_csp_font_eval" type="checkbox" id="h_csp_font_eval"  value="checked" <?php echo @$config['h_csp_font_eval']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_eval'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_font_hashes">
-                                            <input name="h_csp_font_hashes" type="checkbox" id="h_csp_font_hashes" class="toggle" value="checked" <?php echo @$config['h_csp_font_hashes']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_hashes'); ?>
+                                            <input name="h_csp_font_hashes" type="checkbox" id="h_csp_font_hashes"  value="checked" <?php echo @$config['h_csp_font_hashes']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_hashes'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_font_none">
-                                            <input name="h_csp_font_none" type="checkbox" id="h_csp_font_none" class="toggle" value="checked" <?php echo @$config['h_csp_font_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
+                                            <input name="h_csp_font_none" type="checkbox" id="h_csp_font_none"  value="checked" <?php echo @$config['h_csp_font_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
                                     </li> 
@@ -789,58 +789,58 @@ $config = $this->getConfig('config');
                             
                                 <ul>
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_script_https">
-                                            <input name="h_csp_script_https" type="checkbox" id="h_csp_script_https" class="toggle" value="checked" <?php echo @$config['h_csp_script_https']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_https'); ?>
+                                            <input name="h_csp_script_https" type="checkbox" id="h_csp_script_https"  value="checked" <?php echo @$config['h_csp_script_https']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_https'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_script_data">
-                                            <input name="h_csp_script_data" type="checkbox" id="h_csp_script_data" class="toggle" value="checked" <?php echo @$config['h_csp_script_data']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_data'); ?>
+                                            <input name="h_csp_script_data" type="checkbox" id="h_csp_script_data"  value="checked" <?php echo @$config['h_csp_script_data']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_data'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_script_blob">
-                                            <input name="h_csp_script_blob" type="checkbox" id="h_csp_script_blob" class="toggle" value="checked" <?php echo @$config['h_csp_script_blob']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_blob'); ?>
+                                            <input name="h_csp_script_blob" type="checkbox" id="h_csp_script_blob"  value="checked" <?php echo @$config['h_csp_script_blob']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_blob'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_script_self">
-                                            <input name="h_csp_script_self" type="checkbox" id="h_csp_script_self" class="toggle" value="checked" <?php echo @$config['h_csp_script_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
+                                            <input name="h_csp_script_self" type="checkbox" id="h_csp_script_self"  value="checked" <?php echo @$config['h_csp_script_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_script_inline">
-                                            <input name="h_csp_script_inline" type="checkbox" id="h_csp_script_inline" class="toggle" value="checked" <?php echo @$config['h_csp_script_inline']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_inline'); ?>
+                                            <input name="h_csp_script_inline" type="checkbox" id="h_csp_script_inline"  value="checked" <?php echo @$config['h_csp_script_inline']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_inline'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_script_eval">
-                                            <input name="h_csp_script_eval" type="checkbox" id="h_csp_script_eval" class="toggle" value="checked" <?php echo @$config['h_csp_script_eval']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_eval'); ?>
+                                            <input name="h_csp_script_eval" type="checkbox" id="h_csp_script_eval"  value="checked" <?php echo @$config['h_csp_script_eval']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_eval'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_script_hashes">
-                                            <input name="h_csp_script_hashes" type="checkbox" id="h_csp_script_hashes" class="toggle" value="checked" <?php echo @$config['h_csp_script_hashes']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_hashes'); ?>
+                                            <input name="h_csp_script_hashes" type="checkbox" id="h_csp_script_hashes"  value="checked" <?php echo @$config['h_csp_script_hashes']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_hashes'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_script_none">
-                                            <input name="h_csp_script_none" type="checkbox" id="h_csp_script_none" class="toggle" value="checked" <?php echo @$config['h_csp_script_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
+                                            <input name="h_csp_script_none" type="checkbox" id="h_csp_script_none"  value="checked" <?php echo @$config['h_csp_script_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
                                     </li> 
@@ -854,58 +854,58 @@ $config = $this->getConfig('config');
                             
                                 <ul>
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_style_https">
-                                            <input name="h_csp_style_https" type="checkbox" id="h_csp_style_https" class="toggle" value="checked" <?php echo @$config['h_csp_style_https']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_https'); ?>
+                                            <input name="h_csp_style_https" type="checkbox" id="h_csp_style_https"  value="checked" <?php echo @$config['h_csp_style_https']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_https'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_style_data">
-                                            <input name="h_csp_style_data" type="checkbox" id="h_csp_style_data" class="toggle" value="checked" <?php echo @$config['h_csp_style_data']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_data'); ?>
+                                            <input name="h_csp_style_data" type="checkbox" id="h_csp_style_data"  value="checked" <?php echo @$config['h_csp_style_data']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_data'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_style_blob">
-                                            <input name="h_csp_style_blob" type="checkbox" id="h_csp_style_blob" class="toggle" value="checked" <?php echo @$config['h_csp_style_blob']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_blob'); ?>
+                                            <input name="h_csp_style_blob" type="checkbox" id="h_csp_style_blob"  value="checked" <?php echo @$config['h_csp_style_blob']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_blob'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_style_self">
-                                            <input name="h_csp_style_self" type="checkbox" id="h_csp_style_self" class="toggle" value="checked" <?php echo @$config['h_csp_style_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
+                                            <input name="h_csp_style_self" type="checkbox" id="h_csp_style_self"  value="checked" <?php echo @$config['h_csp_style_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_style_inline">
-                                            <input name="h_csp_style_inline" type="checkbox" id="h_csp_style_inline" class="toggle" value="checked" <?php echo @$config['h_csp_style_inline']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_inline'); ?>
+                                            <input name="h_csp_style_inline" type="checkbox" id="h_csp_style_inline"  value="checked" <?php echo @$config['h_csp_style_inline']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_inline'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_style_eval">
-                                            <input name="h_csp_style_eval" type="checkbox" id="h_csp_style_eval" class="toggle" value="checked" <?php echo @$config['h_csp_style_eval']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_eval'); ?>
+                                            <input name="h_csp_style_eval" type="checkbox" id="h_csp_style_eval"  value="checked" <?php echo @$config['h_csp_style_eval']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_eval'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_style_hashes">
-                                            <input name="h_csp_style_hashes" type="checkbox" id="h_csp_style_hashes" class="toggle" value="checked" <?php echo @$config['h_csp_style_hashes']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_hashes'); ?>
+                                            <input name="h_csp_style_hashes" type="checkbox" id="h_csp_style_hashes"  value="checked" <?php echo @$config['h_csp_style_hashes']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_hashes'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_style_none">
-                                            <input name="h_csp_style_none" type="checkbox" id="h_csp_style_none" class="toggle" value="checked" <?php echo @$config['h_csp_style_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
+                                            <input name="h_csp_style_none" type="checkbox" id="h_csp_style_none"  value="checked" <?php echo @$config['h_csp_style_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
                                     </li> 
@@ -919,58 +919,58 @@ $config = $this->getConfig('config');
                             
                                 <ul>
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_object_https">
-                                            <input name="h_csp_object_https" type="checkbox" id="h_csp_object_https" class="toggle" value="checked" <?php echo @$config['h_csp_object_https']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_https'); ?>
+                                            <input name="h_csp_object_https" type="checkbox" id="h_csp_object_https"  value="checked" <?php echo @$config['h_csp_object_https']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_https'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_object_data">
-                                            <input name="h_csp_object_data" type="checkbox" id="h_csp_object_data" class="toggle" value="checked" <?php echo @$config['h_csp_object_data']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_data'); ?>
+                                            <input name="h_csp_object_data" type="checkbox" id="h_csp_object_data"  value="checked" <?php echo @$config['h_csp_object_data']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_data'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_object_blob">
-                                            <input name="h_csp_object_blob" type="checkbox" id="h_csp_object_blob" class="toggle" value="checked" <?php echo @$config['h_csp_object_blob']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_blob'); ?>
+                                            <input name="h_csp_object_blob" type="checkbox" id="h_csp_object_blob"  value="checked" <?php echo @$config['h_csp_object_blob']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_blob'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_object_self">
-                                            <input name="h_csp_object_self" type="checkbox" id="h_csp_object_self" class="toggle" value="checked" <?php echo @$config['h_csp_object_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
+                                            <input name="h_csp_object_self" type="checkbox" id="h_csp_object_self"  value="checked" <?php echo @$config['h_csp_object_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_object_inline">
-                                            <input name="h_csp_object_inline" type="checkbox" id="h_csp_object_inline" class="toggle" value="checked" <?php echo @$config['h_csp_object_inline']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_inline'); ?>
+                                            <input name="h_csp_object_inline" type="checkbox" id="h_csp_object_inline"  value="checked" <?php echo @$config['h_csp_object_inline']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_inline'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_object_eval">
-                                            <input name="h_csp_object_eval" type="checkbox" id="h_csp_object_eval" class="toggle" value="checked" <?php echo @$config['h_csp_object_eval']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_eval'); ?>
+                                            <input name="h_csp_object_eval" type="checkbox" id="h_csp_object_eval"  value="checked" <?php echo @$config['h_csp_object_eval']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_eval'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_object_hashes">
-                                            <input name="h_csp_object_hashes" type="checkbox" id="h_csp_object_hashes" class="toggle" value="checked" <?php echo @$config['h_csp_object_hashes']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_hashes'); ?>
+                                            <input name="h_csp_object_hashes" type="checkbox" id="h_csp_object_hashes"  value="checked" <?php echo @$config['h_csp_object_hashes']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_hashes'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_object_none">
-                                            <input name="h_csp_object_none" type="checkbox" id="h_csp_object_none" class="toggle" value="checked" <?php echo @$config['h_csp_object_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
+                                            <input name="h_csp_object_none" type="checkbox" id="h_csp_object_none"  value="checked" <?php echo @$config['h_csp_object_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
                                     </li> 
@@ -984,58 +984,58 @@ $config = $this->getConfig('config');
                             
                                 <ul>
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_form_https">
-                                            <input name="h_csp_form_https" type="checkbox" id="h_csp_form_https" class="toggle" value="checked" <?php echo @$config['h_csp_form_https']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_https'); ?>
+                                            <input name="h_csp_form_https" type="checkbox" id="h_csp_form_https"  value="checked" <?php echo @$config['h_csp_form_https']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_https'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_form_data">
-                                            <input name="h_csp_form_data" type="checkbox" id="h_csp_form_data" class="toggle" value="checked" <?php echo @$config['h_csp_form_data']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_data'); ?>
+                                            <input name="h_csp_form_data" type="checkbox" id="h_csp_form_data"  value="checked" <?php echo @$config['h_csp_form_data']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_data'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_form_blob">
-                                            <input name="h_csp_form_blob" type="checkbox" id="h_csp_form_blob" class="toggle" value="checked" <?php echo @$config['h_csp_form_blob']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_blob'); ?>
+                                            <input name="h_csp_form_blob" type="checkbox" id="h_csp_form_blob"  value="checked" <?php echo @$config['h_csp_form_blob']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_blob'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_form_self">
-                                            <input name="h_csp_form_self" type="checkbox" id="h_csp_form_self" class="toggle" value="checked" <?php echo @$config['h_csp_form_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
+                                            <input name="h_csp_form_self" type="checkbox" id="h_csp_form_self"  value="checked" <?php echo @$config['h_csp_form_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_form_inline">
-                                            <input name="h_csp_form_inline" type="checkbox" id="h_csp_form_inline" class="toggle" value="checked" <?php echo @$config['h_csp_form_inline']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_inline'); ?>
+                                            <input name="h_csp_form_inline" type="checkbox" id="h_csp_form_inline"  value="checked" <?php echo @$config['h_csp_form_inline']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_inline'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_form_eval">
-                                            <input name="h_csp_form_eval" type="checkbox" id="h_csp_form_eval" class="toggle" value="checked" <?php echo @$config['h_csp_form_eval']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_eval'); ?>
+                                            <input name="h_csp_form_eval" type="checkbox" id="h_csp_form_eval"  value="checked" <?php echo @$config['h_csp_form_eval']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_eval'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_form_hashes">
-                                            <input name="h_csp_form_hashes" type="checkbox" id="h_csp_form_hashes" class="toggle" value="checked" <?php echo @$config['h_csp_form_hashes']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_hashes'); ?>
+                                            <input name="h_csp_form_hashes" type="checkbox" id="h_csp_form_hashes"  value="checked" <?php echo @$config['h_csp_form_hashes']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_hashes'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_form_none">
-                                            <input name="h_csp_form_none" type="checkbox" id="h_csp_form_none" class="toggle" value="checked" <?php echo @$config['h_csp_form_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
+                                            <input name="h_csp_form_none" type="checkbox" id="h_csp_form_none"  value="checked" <?php echo @$config['h_csp_form_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
                                     </li> 
@@ -1049,58 +1049,58 @@ $config = $this->getConfig('config');
                             
                                 <ul>
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_frame_https">
-                                            <input name="h_csp_frame_https" type="checkbox" id="h_csp_frame_https" class="toggle" value="checked" <?php echo @$config['h_csp_frame_https']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_https'); ?>
+                                            <input name="h_csp_frame_https" type="checkbox" id="h_csp_frame_https"  value="checked" <?php echo @$config['h_csp_frame_https']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_https'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_frame_data">
-                                            <input name="h_csp_frame_data" type="checkbox" id="h_csp_frame_data" class="toggle" value="checked" <?php echo @$config['h_csp_frame_data']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_data'); ?>
+                                            <input name="h_csp_frame_data" type="checkbox" id="h_csp_frame_data"  value="checked" <?php echo @$config['h_csp_frame_data']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_data'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_frame_blob">
-                                            <input name="h_csp_frame_blob" type="checkbox" id="h_csp_frame_blob" class="toggle" value="checked" <?php echo @$config['h_csp_frame_blob']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_blob'); ?>
+                                            <input name="h_csp_frame_blob" type="checkbox" id="h_csp_frame_blob"  value="checked" <?php echo @$config['h_csp_frame_blob']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_blob'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_frame_self">
-                                            <input name="h_csp_frame_self" type="checkbox" id="h_csp_frame_self" class="toggle" value="checked" <?php echo @$config['h_csp_frame_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
+                                            <input name="h_csp_frame_self" type="checkbox" id="h_csp_frame_self"  value="checked" <?php echo @$config['h_csp_frame_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_frame_inline">
-                                            <input name="h_csp_frame_inline" type="checkbox" id="h_csp_frame_inline" class="toggle" value="checked" <?php echo @$config['h_csp_frame_inline']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_inline'); ?>
+                                            <input name="h_csp_frame_inline" type="checkbox" id="h_csp_frame_inline"  value="checked" <?php echo @$config['h_csp_frame_inline']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_inline'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_frame_eval">
-                                            <input name="h_csp_frame_eval" type="checkbox" id="h_csp_frame_eval" class="toggle" value="checked" <?php echo @$config['h_csp_frame_eval']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_eval'); ?>
+                                            <input name="h_csp_frame_eval" type="checkbox" id="h_csp_frame_eval"  value="checked" <?php echo @$config['h_csp_frame_eval']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_eval'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_frame_hashes">
-                                            <input name="h_csp_frame_hashes" type="checkbox" id="h_csp_frame_hashes" class="toggle" value="checked" <?php echo @$config['h_csp_frame_hashes']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_hashes'); ?>
+                                            <input name="h_csp_frame_hashes" type="checkbox" id="h_csp_frame_hashes"  value="checked" <?php echo @$config['h_csp_frame_hashes']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_hashes'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_frame_none">
-                                            <input name="h_csp_frame_none" type="checkbox" id="h_csp_frame_none" class="toggle" value="checked" <?php echo @$config['h_csp_frame_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
+                                            <input name="h_csp_frame_none" type="checkbox" id="h_csp_frame_none"  value="checked" <?php echo @$config['h_csp_frame_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
                                     </li> 
@@ -1114,37 +1114,37 @@ $config = $this->getConfig('config');
                             
                                 <ul>
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_frameanc_https">
-                                            <input name="h_csp_frameanc_https" type="checkbox" id="h_csp_frameanc_https" class="toggle" value="checked" <?php echo @$config['h_csp_frameanc_https']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_https'); ?>
+                                            <input name="h_csp_frameanc_https" type="checkbox" id="h_csp_frameanc_https"  value="checked" <?php echo @$config['h_csp_frameanc_https']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_https'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_frameanc_data">
-                                            <input name="h_csp_frameanc_data" type="checkbox" id="h_csp_frameanc_data" class="toggle" value="checked" <?php echo @$config['h_csp_frameanc_data']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_data'); ?>
+                                            <input name="h_csp_frameanc_data" type="checkbox" id="h_csp_frameanc_data"  value="checked" <?php echo @$config['h_csp_frameanc_data']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_data'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_frameanc_blob">
-                                            <input name="h_csp_frameanc_blob" type="checkbox" id="h_csp_frameanc_blob" class="toggle" value="checked" <?php echo @$config['h_csp_frameanc_blob']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_blob'); ?>
+                                            <input name="h_csp_frameanc_blob" type="checkbox" id="h_csp_frameanc_blob"  value="checked" <?php echo @$config['h_csp_frameanc_blob']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_blob'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_frameanc_self">
-                                            <input name="h_csp_frameanc_self" type="checkbox" id="h_csp_frameanc_self" class="toggle" value="checked" <?php echo @$config['h_csp_frameanc_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
+                                            <input name="h_csp_frameanc_self" type="checkbox" id="h_csp_frameanc_self"  value="checked" <?php echo @$config['h_csp_frameanc_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_csp_frameanc_none">
-                                            <input name="h_csp_frameanc_none" type="checkbox" id="h_csp_frameanc_none" class="toggle" value="checked" <?php echo @$config['h_csp_frameanc_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
+                                            <input name="h_csp_frameanc_none" type="checkbox" id="h_csp_frameanc_none"  value="checked" <?php echo @$config['h_csp_frameanc_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
                                     </li> 
@@ -1157,9 +1157,9 @@ $config = $this->getConfig('config');
                 </div>
                 
                 
-                <div class="checkbox includebackend">
+                <div class="checkbox toggle includebackend">
                     <label for="h_csp_be">
-                        <input name="h_csp_be" type="checkbox" id="h_csp_be" class="toggle" value="checked" <?php echo @$config['h_csp_be']; ?> /> <?php echo $this->i18n('a1656_bas_includebackend'); ?>
+                        <input name="h_csp_be" type="checkbox" id="h_csp_be"  value="checked" <?php echo @$config['h_csp_be']; ?> /> <?php echo $this->i18n('a1656_bas_includebackend'); ?>
                     </label>
                 </div> 
             </div>
@@ -1169,11 +1169,11 @@ $config = $this->getConfig('config');
             <!-- Feature-Policy / Permissions-Policy -->
             <div class="boxed-group hh-highrisk">
                 <dl class="rex-form-group form-group">
-                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_fpp'); ?> <a data-toggle="modal" data-target="#httpmodal" data-title="Feature- & Permissions-Policy" data-content="#datacontent-fpp"><i class="rex-icon fa-question-circle"></i></a></label></dt>
+                    <dt><label for=""><?php echo $this->i18n('a1656_bas_h_fpp'); ?> <a class="modallink" data-toggle="modal" data-target="#httpmodal" data-title="Feature- & Permissions-Policy" data-content="#datacontent-fpp"><i class="rex-icon fa-question-circle"></i></a></label></dt>
                     <dd>
-                        <div class="checkbox">
+                        <div class="checkbox toggle">
                         <label for="h_fpp">
-                            <input name="h_fpp" type="checkbox" id="h_fpp" class="toggle" value="checked" <?php echo @$config['h_fpp']; ?> data-opener="#h_fpp_option" /> <?php echo $this->i18n('a1656_bas_active'); ?>
+                            <input name="h_fpp" type="checkbox" id="h_fpp"  value="checked" <?php echo @$config['h_fpp']; ?> data-opener="#h_fpp_option" /> <?php echo $this->i18n('a1656_bas_active'); ?>
                         </label>
                         </div>
                     </dd>
@@ -1183,9 +1183,9 @@ $config = $this->getConfig('config');
                 <dl class="rex-form-group form-group">
                     <dt><label for="" class="nobold"><?php echo $this->i18n('a1656_bas_h_fpp_noeditor'); ?></label></dt>
                     <dd>
-                        <div class="checkbox">
+                        <div class="checkbox toggle">
                         <label for="h_fpp_noeditor">
-                            <input name="h_fpp_noeditor" type="checkbox" id="h_fpp_noeditor" class="toggle" value="checked" <?php echo @$config['h_fpp_noeditor']; ?> /> <?php echo $this->i18n('a1656_yes'); ?>
+                            <input name="h_fpp_noeditor" type="checkbox" id="h_fpp_noeditor"  value="checked" <?php echo @$config['h_fpp_noeditor']; ?> /> <?php echo $this->i18n('a1656_yes'); ?>
                         </label>
                         </div>
                     </dd>
@@ -1226,16 +1226,16 @@ $config = $this->getConfig('config');
                             
                                 <ul>
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_fpp_cam_self">
-                                            <input name="h_fpp_cam_self" type="checkbox" id="h_fpp_cam_self" class="toggle" value="checked" <?php echo @$config['h_fpp_cam_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
+                                            <input name="h_fpp_cam_self" type="checkbox" id="h_fpp_cam_self"  value="checked" <?php echo @$config['h_fpp_cam_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_fpp_cam_none">
-                                            <input name="h_fpp_cam_none" type="checkbox" id="h_fpp_cam_none" class="toggle" value="checked" <?php echo @$config['h_fpp_cam_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
+                                            <input name="h_fpp_cam_none" type="checkbox" id="h_fpp_cam_none"  value="checked" <?php echo @$config['h_fpp_cam_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
                                     </li> 
@@ -1249,16 +1249,16 @@ $config = $this->getConfig('config');
                             
                                 <ul>
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_fpp_geo_self">
-                                            <input name="h_fpp_geo_self" type="checkbox" id="h_fpp_geo_self" class="toggle" value="checked" <?php echo @$config['h_fpp_geo_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
+                                            <input name="h_fpp_geo_self" type="checkbox" id="h_fpp_geo_self"  value="checked" <?php echo @$config['h_fpp_geo_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_fpp_geo_none">
-                                            <input name="h_fpp_geo_none" type="checkbox" id="h_fpp_geo_none" class="toggle" value="checked" <?php echo @$config['h_fpp_geo_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
+                                            <input name="h_fpp_geo_none" type="checkbox" id="h_fpp_geo_none"  value="checked" <?php echo @$config['h_fpp_geo_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
                                     </li> 
@@ -1272,16 +1272,16 @@ $config = $this->getConfig('config');
                             
                                 <ul>
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_fpp_gyro_self">
-                                            <input name="h_fpp_gyro_self" type="checkbox" id="h_fpp_gyro_self" class="toggle" value="checked" <?php echo @$config['h_fpp_gyro_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
+                                            <input name="h_fpp_gyro_self" type="checkbox" id="h_fpp_gyro_self"  value="checked" <?php echo @$config['h_fpp_gyro_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_fpp_gyro_none">
-                                            <input name="h_fpp_gyro_none" type="checkbox" id="h_fpp_gyro_none" class="toggle" value="checked" <?php echo @$config['h_fpp_gyro_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
+                                            <input name="h_fpp_gyro_none" type="checkbox" id="h_fpp_gyro_none"  value="checked" <?php echo @$config['h_fpp_gyro_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
                                     </li> 
@@ -1295,16 +1295,16 @@ $config = $this->getConfig('config');
                             
                                 <ul>
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_fpp_mag_self">
-                                            <input name="h_fpp_mag_self" type="checkbox" id="h_fpp_mag_self" class="toggle" value="checked" <?php echo @$config['h_fpp_mag_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
+                                            <input name="h_fpp_mag_self" type="checkbox" id="h_fpp_mag_self"  value="checked" <?php echo @$config['h_fpp_mag_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_fpp_mag_none">
-                                            <input name="h_fpp_mag_none" type="checkbox" id="h_fpp_mag_none" class="toggle" value="checked" <?php echo @$config['h_fpp_mag_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
+                                            <input name="h_fpp_mag_none" type="checkbox" id="h_fpp_mag_none"  value="checked" <?php echo @$config['h_fpp_mag_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
                                     </li> 
@@ -1318,16 +1318,16 @@ $config = $this->getConfig('config');
                             
                                 <ul>
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_fpp_mic_self">
-                                            <input name="h_fpp_mic_self" type="checkbox" id="h_fpp_mic_self" class="toggle" value="checked" <?php echo @$config['h_fpp_mic_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
+                                            <input name="h_fpp_mic_self" type="checkbox" id="h_fpp_mic_self"  value="checked" <?php echo @$config['h_fpp_mic_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_fpp_mic_none">
-                                            <input name="h_fpp_mic_none" type="checkbox" id="h_fpp_mic_none" class="toggle" value="checked" <?php echo @$config['h_fpp_mic_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
+                                            <input name="h_fpp_mic_none" type="checkbox" id="h_fpp_mic_none"  value="checked" <?php echo @$config['h_fpp_mic_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
                                     </li> 
@@ -1341,16 +1341,16 @@ $config = $this->getConfig('config');
                             
                                 <ul>
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_fpp_usb_self">
-                                            <input name="h_fpp_usb_self" type="checkbox" id="h_fpp_usb_self" class="toggle" value="checked" <?php echo @$config['h_fpp_usb_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
+                                            <input name="h_fpp_usb_self" type="checkbox" id="h_fpp_usb_self"  value="checked" <?php echo @$config['h_fpp_usb_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_fpp_usb_none">
-                                            <input name="h_fpp_usb_none" type="checkbox" id="h_fpp_usb_none" class="toggle" value="checked" <?php echo @$config['h_fpp_usb_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
+                                            <input name="h_fpp_usb_none" type="checkbox" id="h_fpp_usb_none"  value="checked" <?php echo @$config['h_fpp_usb_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
                                     </li> 
@@ -1364,16 +1364,16 @@ $config = $this->getConfig('config');
                             
                                 <ul>
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_fpp_docdom_self">
-                                            <input name="h_fpp_docdom_self" type="checkbox" id="h_fpp_docdom_self" class="toggle" value="checked" <?php echo @$config['h_fpp_docdom_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
+                                            <input name="h_fpp_docdom_self" type="checkbox" id="h_fpp_docdom_self"  value="checked" <?php echo @$config['h_fpp_docdom_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_fpp_docdom_none">
-                                            <input name="h_fpp_docdom_none" type="checkbox" id="h_fpp_docdom_none" class="toggle" value="checked" <?php echo @$config['h_fpp_docdom_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
+                                            <input name="h_fpp_docdom_none" type="checkbox" id="h_fpp_docdom_none"  value="checked" <?php echo @$config['h_fpp_docdom_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
                                     </li> 
@@ -1387,16 +1387,16 @@ $config = $this->getConfig('config');
                             
                                 <ul>
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_fpp_full_self">
-                                            <input name="h_fpp_full_self" type="checkbox" id="h_fpp_full_self" class="toggle" value="checked" <?php echo @$config['h_fpp_full_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
+                                            <input name="h_fpp_full_self" type="checkbox" id="h_fpp_full_self"  value="checked" <?php echo @$config['h_fpp_full_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_fpp_full_none">
-                                            <input name="h_fpp_full_none" type="checkbox" id="h_fpp_full_none" class="toggle" value="checked" <?php echo @$config['h_fpp_full_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
+                                            <input name="h_fpp_full_none" type="checkbox" id="h_fpp_full_none"  value="checked" <?php echo @$config['h_fpp_full_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
                                     </li> 
@@ -1410,16 +1410,16 @@ $config = $this->getConfig('config');
                             
                                 <ul>
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_fpp_pay_self">
-                                            <input name="h_fpp_pay_self" type="checkbox" id="h_fpp_pay_self" class="toggle" value="checked" <?php echo @$config['h_fpp_pay_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
+                                            <input name="h_fpp_pay_self" type="checkbox" id="h_fpp_pay_self"  value="checked" <?php echo @$config['h_fpp_pay_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
                                         </label>
                                         </div>
                                     </li> 
                                     <li>
-                                        <div class="checkbox">
+                                        <div class="checkbox toggle">
                                         <label for="h_fpp_pay_none">
-                                            <input name="h_fpp_pay_none" type="checkbox" id="h_fpp_pay_none" class="toggle" value="checked" <?php echo @$config['h_fpp_pay_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
+                                            <input name="h_fpp_pay_none" type="checkbox" id="h_fpp_pay_none"  value="checked" <?php echo @$config['h_fpp_pay_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
                                     </li> 
@@ -1433,9 +1433,9 @@ $config = $this->getConfig('config');
                 </div>
                 
                 
-                <div class="checkbox includebackend">
+                <div class="checkbox toggle includebackend">
                     <label for="h_fpp_be">
-                        <input name="h_fpp_be" type="checkbox" id="h_fpp_be" class="toggle" value="checked" <?php echo @$config['h_fpp_be']; ?> /> <?php echo $this->i18n('a1656_bas_includebackend'); ?>
+                        <input name="h_fpp_be" type="checkbox" id="h_fpp_be"  value="checked" <?php echo @$config['h_fpp_be']; ?> /> <?php echo $this->i18n('a1656_bas_includebackend'); ?>
                     </label>
                 </div> 
             </div>            

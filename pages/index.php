@@ -73,6 +73,101 @@ td.name { position: relative; padding-right: 20px !important; }
 	.info-green { background: #360; color: #FFF; }
 	.info-red { background: #900; color: #FFF; }
 .infoblock { display: block; font-size: 0.825em; margin-top: 7px; }
+
+/* Boxen */
+.boxed-group { position: relative; background: rgba(255,255,255, 0.6); margin: 0px 0px 15px; padding: 15px 20px; border: #CCC; }
+.boxed-group dl.form-group { margin-bottom: 0px; margin-top: 15px; }
+	.boxed-group dl.form-group:first-child { margin-top: 0px; }
+	.boxed-group .hiddencontent > dl:first-child { margin-top: 15px; }
+.boxed-group label.nobold { font-weight: normal; }
+a.modallink { cursor: pointer; }
+
+.cspblock { display: inline-block; vertical-align: top; min-width: 182px; margin: 0px 23px 18px 0px; padding: 7px 14px; transition: all .3s ease; }
+	.cspblock:hover { background: #FFF; }
+.cspblock label { margin-right: 0px !important; }
+.cspblock ul { list-style: none; margin: 0px; padding: 0px;}
+.cspblock li { margin: 0px 0px 5px; }
+
+/* Header-Farben */
+.hh-risk { border-left: 3px solid orange; }
+.hh-highrisk { border-left: 3px solid #D9534F; }
+
+/* Checkbox/Radio-Toggler */
+.checkbox.toggle label input, .radio.toggle label input { -webkit-appearance: none; -moz-appearance: none; appearance: none; width: 3em; height: 1.5em; background: #ddd; vertical-align: middle; border-radius: 1.6em; position: relative; outline: 0; margin-top: -3px; margin-right: 10px; cursor: pointer; transition: background 0.1s ease-in-out; }
+	.checkbox.toggle label input::after, .radio.toggle label input::after, .radio.switch label input::before { content: ''; width: 1.5em; height: 1.5em; background: white; position: absolute; border-radius: 1.2em; transform: scale(0.7); left: 0; box-shadow: 0 1px rgba(0, 0, 0, 0.5); transition: left 0.1s ease-in-out; }
+.checkbox.toggle label input:checked, .radio.toggle label input:checked { background: #5791CE; }
+	.checkbox.toggle label input:checked::after { left: 1.5em; }
+
+.radio.switch label { margin-right: 1.5em; }
+.radio.switch label input { width: 1.5em; margin-right: 5px; }
+	.radio.switch label input:checked::after { transform: scale(0.5); }
+.radio.switch label input::before { background: #5791CE; opacity: 0; box-shadow: none; }
+	.radio.switch label input:checked::before { animation: radioswitcheffect 0.65s; }
+@keyframes radioswitcheffect { 0% { opacity: 0.75; } 100% { opacity: 0; transform: scale(2.5); } }
+
+/* Checkbox-Toggler small */
+.includebackend { text-align: right; zoom: 0.75; margin: 0px; position: absolute; top: 13px; right: 13px; }
+.includebackend label { margin-right: 0px !important; }
+.includebackend label input[type=checkbox].toggle { margin-right: 8px; }
+
+/* Modalfenster */
+.hh-modal { background: rgba(40,53,66, 0.4); }
+.hh-modal .modal-header { background: #dfe3e9; line-height: 1.25; padding: 10px 15px; font-size: 16px; }
+.hh-modal .modal-title { display: inline; }
+.hh-content { display: none; }
+
+
+@media (min-width: 768px){
+	.hh-modal-large .modal-dialog { width: 90%; max-width: 800px;}
+}
+
+
+<?php if (rex_string::versionCompare(rex::getVersion(), '5.13.0-dev', '>=')): ?>
+body.rex-theme-dark .cspblock:hover { background: #1f3d3c; }
+body.rex-theme-dark .boxed-group { background: rgba(54,81,80, 0.45); }
+body.rex-theme-dark .hh-modal .modal-header { background: inherit; }
+
+body.rex-theme-dark .checkbox.toggle label input,
+body.rex-theme-dark .radio.toggle label input
+	{ background: #202b35; }
+body.rex-theme-dark .checkbox.toggle label input::after, 
+body.rex-theme-dark .radio.toggle label input::after, 
+body.rex-theme-dark .radio.switch label input::before
+	{ background: #CCC; }
+
+body.rex-theme-dark .checkbox.toggle label input:checked,
+body.rex-theme-dark .radio.toggle label input:checked 
+	{ background: #409be4; }
+body.rex-theme-dark .checkbox.toggle label input:checked::after, 
+body.rex-theme-dark .radio.toggle label input:checked::after, 
+body.rex-theme-dark .radio.switch label input:checked::before
+	{ background: #EEE; }
+
+	
+
+@media (prefers-color-scheme: dark){
+	
+	body:not(.rex-theme-light) .cspblock:hover { background: #1f3d3c; }
+	body:not(.rex-theme-light) .boxed-group { background: rgba(54,81,80, 0.45); }
+	body:not(.rex-theme-light) .hh-modal .modal-header { background: inherit; }
+
+	body:not(.rex-theme-light) .checkbox.toggle label input,
+	body:not(.rex-theme-light) .radio.toggle label input
+		{ background: #202b35; }
+	body:not(.rex-theme-light) .checkbox.toggle label input::after, 
+	body:not(.rex-theme-light) .radio.toggle label input::after, 
+	body:not(.rex-theme-light) .radio.switch label input::before
+		{ background: #CCC; }
+	
+	body:not(.rex-theme-light) .checkbox.toggle label input:checked,
+	body:not(.rex-theme-light) .radio.toggle label input:checked 
+		{ background: #409be4; }
+	body:not(.rex-theme-light) .checkbox.toggle label input:checked::after, 
+	body:not(.rex-theme-light) .radio.toggle label input:checked::after, 
+	body:not(.rex-theme-light) .radio.switch label input:checked::before
+		{ background: #EEE; }
+}
+<?php endif; ?>
 </style>
 
 
