@@ -1,0 +1,134 @@
+# addon: httpheader nl_nl 1.0
+
+a1656_title = HTTP-header
+
+a1656_default = Instellingen
+a1656_help = Help
+
+a1656_head_basics = Instellingen
+a1656_head_help = Online hulp
+
+
+a1656_subheader_basic1 = Diverse headers
+a1656_subheader_basic2 = Beveiligingsheader
+
+
+# Backend output
+a1656_seo_modal_title = SEO-CheckUp
+a1656_seo_modal_analyze = Analyse is geladen ...
+a1656_seo_modal_close = Sluiten
+a1656_seo_modal_error = Fout
+a1656_seo_modal_legibility = Leesbaarheid
+a1656_seo_modal_artnotfound = Artikel niet gevonden
+
+
+# Pagina: Algemeen = Instellingen
+a1656_bas_active = activeren
+a1656_bas_remove = onderdrukken
+a1656_bas_includebackend = Include backend
+a1656_bas_property = Eigendom
+
+a1656_bas_h_connection = Connection: keep-alive
+a1656_bas_h_vary = Vary: accept-encoding
+a1656_bas_h_server = Identificatiecode server
+a1656_bas_h_poweredby = X-Powered-By
+a1656_bas_h_contenttype = X-Content-Type-Options: nosniff
+a1656_bas_h_frame = X-Frame-Options
+a1656_bas_h_xss = X-XSS-bescherming
+a1656_bas_h_xss_block = Modus: Blokkeren
+a1656_bas_h_referer = Referrer-Policy
+a1656_bas_h_transport = Strict-Transport-Security
+a1656_bas_h_transport_maxage = Geldigheid (sec.)
+a1656_bas_h_transport_subdomains = Inclusief subdomeinen
+a1656_bas_h_csp = Content-Security-Policy
+a1656_bas_h_csp_noeditor = Gebruik invoerveld in plaats van selectie
+a1656_bas_h_csp_editor = Definieer eigenschappen
+a1656_bas_h_csp_definition = CSP-definitie opslaan
+a1656_bas_h_csp_definition_example = Format: Content-Security-Policy: default-src https: 'unsafe-inline'; frame-ancestors 'none';
+a1656_bas_h_fpp = kenmerk/toelatingsbeleid
+a1656_bas_h_fpp_noeditor = gebruik invoervelden in plaats van selectie
+a1656_bas_h_fpp_editor = Definieer eigenschappen
+a1656_bas_h_fpp_definition_f = Store feature definition
+a1656_bas_h_fpp_definition_p = Store permissions definition
+a1656_bas_h_fpp_definition_f_example = Format: Feature-Policy: camera 'none'; microfoon self;
+a1656_bas_h_fpp_definition_p_example = Format: Permissions-Policy: camera=(), microphone=(self)
+
+a1656_bas_h_csp_default = default-src
+a1656_bas_h_csp_img = img-src
+a1656_bas_h_csp_media = media-src
+a1656_bas_h_csp_font = font-src
+a1656_bas_h_csp_script = script-src
+a1656_bas_h_csp_style = style-src
+a1656_bas_h_csp_object = object-src
+a1656_bas_h_csp_form = form-action
+a1656_bas_h_csp_frame = frame-src
+a1656_bas_h_csp_frameanc = frame-ancestors
+
+a1656_bas_h_fpp_camera = camera
+a1656_bas_h_fpp_geolocation = geolocatie
+a1656_bas_h_fpp_gyro = gyroscoop
+a1656_bas_h_fpp_magnet = magnetometer
+a1656_bas_h_fpp_micro = microfoon
+a1656_bas_h_fpp_usb = usb
+a1656_bas_h_fpp_docdomain = document-domain
+a1656_bas_h_fpp_fullscreen = volledig scherm
+a1656_bas_h_fpp_payment = betaling
+
+a1656_bas_h_editor_https = https:
+a1656_bas_h_editor_data = data:
+a1656_bas_h_editor_blob = blob:
+a1656_bas_h_editor_self = self
+a1656_bas_h_editor_inline = unsafe-inline
+a1656_bas_h_editor_eval = unsafe-eval
+a1656_bas_h_editor_hashes = onveilige-hashes
+a1656_bas_h_editor_none = none
+
+
+# Other defaults
+a1656_voorbeeld = monster
+a1656_voorbeelden = Voorbeelden...
+a1656_overview = Overzicht:
+
+a1656_search_all = all
+a1656_search_noselection = - geen selectie -.
+a1656_search_sort = weergave
+a1656_search_sort_onlyactive = alleen actieve vermeldingen (online)
+a1656_search_sort_onlyinactive = alleen gedeactiveerde vermeldingen (offline)
+a1656_search_keyword = zoekterm
+a1656_search_submit = zoeken
+a1656_search_reset = reset zoeken
+a1656_search_notfound = Geen vermeldingen gevonden.
+a1656_search_more = meer opties
+a1656_search_cat = categorie
+a1656_search_maincat = hoofdcategorie
+a1656_search_archive = alleen archiefvermeldingen tonen
+
+a1656_edit = veranderen
+a1656_delete = verwijderen
+a1656_online = online
+a1656_offline = offline
+a1656_new = toevoegen
+a1656_save = opslaan
+a1656_yes = ja
+a1656_no = no
+a1656_showbox = tonen/verbergen
+a1656_showcss = toon/verberg CSS
+
+a1656_settings_saved = De instellingen zijn opgeslagen!
+a1656_module_saved = De module is geïnstalleerd!
+a1656_error = Er is een fout opgetreden!
+a1656_notice = Kennisgeving
+a1656_entry_saved = Opgeslagen item
+a1656_entry_deleted = Toegang verwijderd
+a1656_error_saved = Fout tijdens opslaan
+a1656_error_deleted = Fout tijdens verwijderen
+
+a1656_dir = Directory
+a1656_destdir = Bestemmingsdirectory
+a1656_notdeleted = kon niet worden verwijderd
+a1656_notcopyed = kon niet worden gekopieerd
+a1656_deletemodule = Verwijder modules die via de addon zijn geïnstalleerd met de hand.
+a1656_emptyfield = leeg of ongeldig
+a1656_charslenfield = is te kort
+
+a1656_js_confirm = Wilt u de module echt installeren?

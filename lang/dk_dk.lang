@@ -1,0 +1,134 @@
+# addon: httpheader dk_dk 1.0
+
+a1656_title = HTTP-header
+
+a1656_default = Indstillinger
+a1656_help = Hjælp
+
+a1656_head_basics = Indstillinger
+a1656_head_help = Online hjælp
+
+
+a1656_subheader_basic1 = Forskellige overskrifter
+a1656_subheader_basic2 = Sikkerhedsoverskrift
+
+
+# Backend output
+a1656_seo_modal_title = SEO-CheckUp
+a1656_seo_modal_analyze = Analyse er indlæst ...
+a1656_seo_modal_close = Luk
+a1656_seo_modal_error = Fejl
+a1656_seo_modal_legibility = Læsbarhed
+a1656_seo_modal_artnotfound = Artikel ikke fundet
+
+
+# Side: Generelt = Indstillinger
+a1656_bas_active = aktivere
+a1656_bas_remove = undertrykke
+a1656_bas_includebackend = Inkluder backend
+a1656_bas_property = Ejendom
+
+a1656_bas_h_connection = Forbindelse: keep-alive
+a1656_bas_h_vary = Vary: accept-encoding
+a1656_bas_h_server = Serveridentifikator
+a1656_bas_h_poweredby = X-Powered-By
+a1656_bas_h_contenttype = X-Content-Type-Options: nosniff
+a1656_bas_h_frame = X-Frame-Options
+a1656_bas_h_xss = X-XSS-beskyttelse
+a1656_bas_h_xss_block = Mode: Blokering
+a1656_bas_h_referer = Referrer-Policy
+a1656_bas_h_transport = Strict-Transport-Security
+a1656_bas_h_transport_maxage = Gyldighed (sek.)
+a1656_bas_h_transport_subdomæner = Inklusive subdomæner
+a1656_bas_h_csp = Content-Security-Policy (Politik for indholdssikkerhed)
+a1656_bas_h_csp_noeditor = Brug inputfelt i stedet for valg
+a1656_bas_h_csp_editor = Definer egenskaber
+a1656_bas_h_csp_definition = Gem CSP-definition
+a1656_bas_h_csp_definition_example = Format: Content-Security-Policy: default-src https: 'unsafe-inline'; frame-ancestors 'none';
+a1656_bas_h_fpp = funktion/tilladelsespolitik
+a1656_bas_h_fpp_noeditor = brug inputfelter i stedet for valg
+a1656_bas_h_fpp_editor = Definer egenskaber
+a1656_bas_h_fpp_definition_f = Opbevarer funktionsdefinition
+a1656_bas_h_fpp_definition_p = Lagre definition af tilladelser
+a1656_bas_h_fpp_definition_f_example = Format: Feature-Policy: camera 'none'; microphone self;
+a1656_bas_h_fpp_definition_p_example = Format: Tilladelsespolitik: camera=(), microphone=(self)
+
+a1656_bas_h_csp_default = default-src
+a1656_bas_h_csp_img = img-src
+a1656_bas_h_csp_media = media-src
+a1656_bas_h_csp_font = font-src
+a1656_bas_h_csp_script = script-src
+a1656_bas_h_csp_style = style-src
+a1656_bas_h_csp_object = object-src
+a1656_bas_h_csp_form = form-action
+a1656_bas_h_csp_frame = frame-src
+a1656_bas_h_csp_frameanc = frame-ancestors
+
+a1656_bas_h_fpp_camera = kamera
+a1656_bas_h_fpp_geolocation = geolocation
+a1656_bas_h_fpp_gyro = gyroskop
+a1656_bas_h_fpp_magnet = magnetometer
+a1656_bas_h_fpp_micro = mikrofon
+a1656_bas_h_fpp_usb = usb
+a1656_bas_h_fpp_docdomain = dokument-domæne
+a1656_bas_h_fpp_fullscreen = fuld skærm
+a1656_bas_h_fpp_payment = betaling
+
+a1656_bas_h_editor_https = https:
+a1656_bas_h_editor_data = data:
+a1656_bas_h_editor_blob = blob:
+a1656_bas_h_editor_self = self
+a1656_bas_h_editor_inline = usikker-inline
+a1656_bas_h_editor_eval = usikker-eval
+a1656_bas_h_editor_hashes = usikre hashes
+a1656_bas_h_editor_none = ingen
+
+
+# Andre standardindstillinger
+a1656_example = prøve
+a1656_examples = Eksempler...
+a1656_overview = Oversigt:
+
+a1656_search_all = alle
+a1656_search_noselection = - ingen udvælgelse -.
+a1656_search_sort = view
+a1656_search_sort_onlyactive = kun aktive poster (online)
+a1656_search_sort_onlyinactive = kun deaktiverede poster (offline)
+a1656_search_keyword = søgeord
+a1656_search_submit = søgning
+a1656_search_reset = nulstiller søgning
+a1656_search_notfound = Ingen poster fundet.
+a1656_search_more = flere muligheder
+a1656_search_cat = kategori
+a1656_search_maincat = hovedkategori
+a1656_search_archive = viser kun arkivposter
+
+a1656_edit = ændre
+a1656_delete = slette
+a1656_online = online
+a1656_offline = offline
+a1656_new = tilføj
+a1656_save = gemme
+a1656_yes = ja
+a1656_no = nej
+a1656_showbox = vis/skjul
+a1656_showcss = Vis/skjul CSS
+
+a1656_settings_saved = Indstillingerne er blevet gemt!
+a1656_module_saved = Modulet blev installeret!
+a1656_error = Der er opstået en fejl!
+a1656_notice = Meddelelse
+a1656_entry_saved = Opbevaret post
+a1656_entry_deleted = Post slettet
+a1656_error_saved = Fejl under lagring
+a1656_error_deleted = Fejl under sletning
+
+a1656_dir = Vejviser
+a1656_destdir = Destinationsmappe
+a1656_notdeleted = kunne ikke slettes
+a1656_notcopyed = kunne ikke kopieres
+a1656_deletemodule = Slet venligst moduler, der er installeret via tilføjelsen i hånden.
+a1656_emptyfield = tomt eller ugyldigt
+a1656_charslenfield = er for kort
+
+a1656_js_confirm = Ønsker du virkelig at installere modulet?
