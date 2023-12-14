@@ -45,6 +45,7 @@ a1656_bas_h_csp_noeditor = Gebruik invoerveld in plaats van selectie
 a1656_bas_h_csp_editor = Definieer eigenschappen
 a1656_bas_h_csp_definition = CSP-definitie opslaan
 a1656_bas_h_csp_definition_example = Format: Content-Security-Policy: default-src https: 'unsafe-inline'; frame-ancestors 'none';
+a1656_bas_h_csp_url_example = URL: https://www.domain.de
 a1656_bas_h_fpp = kenmerk/toelatingsbeleid
 a1656_bas_h_fpp_noeditor = gebruik invoervelden in plaats van selectie
 a1656_bas_h_fpp_editor = Definieer eigenschappen
@@ -63,6 +64,8 @@ a1656_bas_h_csp_object = object-src
 a1656_bas_h_csp_form = form-action
 a1656_bas_h_csp_frame = frame-src
 a1656_bas_h_csp_frameanc = frame-ancestors
+a1656_bas_h_csp_connect = connect-src
+a1656_bas_h_csp_manifest = manifest-src
 
 a1656_bas_h_fpp_camera = camera
 a1656_bas_h_fpp_geolocation = geolocatie
