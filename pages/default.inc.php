@@ -2,8 +2,8 @@
 /*
 	Redaxo-Addon HTTP-Header
 	Verwaltung: Hauptseite (Default)
-	v1.0
-	by Falko Müller @ 2021
+	v1.1.3
+	by Falko Müller @ 2021-2023
 	package: redaxo5
 */
 
@@ -52,6 +52,7 @@ if ($func == "save" && isset($_POST['submit'])):
 		'h_csp_default_eval'		=> rex_post('h_csp_default_eval'),
 		'h_csp_default_hashes'		=> rex_post('h_csp_default_hashes'),
 		'h_csp_default_none'		=> rex_post('h_csp_default_none'),
+		'h_csp_default_url'			=> rex_post('h_csp_default_url'),
 		
 		'h_csp_img_https'			=> rex_post('h_csp_img_https'),
 		'h_csp_img_data'			=> rex_post('h_csp_img_data'),
@@ -61,6 +62,7 @@ if ($func == "save" && isset($_POST['submit'])):
 		'h_csp_img_eval'			=> rex_post('h_csp_img_eval'),
 		'h_csp_img_hashes'			=> rex_post('h_csp_img_hashes'),
 		'h_csp_img_none'			=> rex_post('h_csp_img_none'),
+		'h_csp_img_url'				=> rex_post('h_csp_img_url'),
 		
 		'h_csp_media_https'			=> rex_post('h_csp_media_https'),
 		'h_csp_media_data'			=> rex_post('h_csp_media_data'),
@@ -70,6 +72,7 @@ if ($func == "save" && isset($_POST['submit'])):
 		'h_csp_media_eval'			=> rex_post('h_csp_media_eval'),
 		'h_csp_media_hashes'		=> rex_post('h_csp_media_hashes'),
 		'h_csp_media_none'			=> rex_post('h_csp_media_none'),
+		'h_csp_media_url'			=> rex_post('h_csp_media_url'),
 		
 		'h_csp_font_https'			=> rex_post('h_csp_font_https'),
 		'h_csp_font_data'			=> rex_post('h_csp_font_data'),
@@ -79,6 +82,7 @@ if ($func == "save" && isset($_POST['submit'])):
 		'h_csp_font_eval'			=> rex_post('h_csp_font_eval'),
 		'h_csp_font_hashes'			=> rex_post('h_csp_font_hashes'),
 		'h_csp_font_none'			=> rex_post('h_csp_font_none'),
+		'h_csp_font_url'			=> rex_post('h_csp_font_url'),
 		
 		'h_csp_script_https'		=> rex_post('h_csp_script_https'),
 		'h_csp_script_data'			=> rex_post('h_csp_script_data'),
@@ -88,6 +92,7 @@ if ($func == "save" && isset($_POST['submit'])):
 		'h_csp_script_eval'			=> rex_post('h_csp_script_eval'),
 		'h_csp_script_hashes'		=> rex_post('h_csp_script_hashes'),
 		'h_csp_script_none'			=> rex_post('h_csp_script_none'),
+		'h_csp_script_url'			=> rex_post('h_csp_script_url'),
 		
 		'h_csp_style_https'			=> rex_post('h_csp_style_https'),
 		'h_csp_style_data'			=> rex_post('h_csp_style_data'),
@@ -97,6 +102,7 @@ if ($func == "save" && isset($_POST['submit'])):
 		'h_csp_style_eval'			=> rex_post('h_csp_style_eval'),
 		'h_csp_style_hashes'		=> rex_post('h_csp_style_hashes'),
 		'h_csp_style_none'			=> rex_post('h_csp_style_none'),
+		'h_csp_style_url'			=> rex_post('h_csp_style_url'),
 		
 		'h_csp_object_https'		=> rex_post('h_csp_object_https'),
 		'h_csp_object_data'			=> rex_post('h_csp_object_data'),
@@ -106,6 +112,7 @@ if ($func == "save" && isset($_POST['submit'])):
 		'h_csp_object_eval'			=> rex_post('h_csp_object_eval'),
 		'h_csp_object_hashes'		=> rex_post('h_csp_object_hashes'),
 		'h_csp_object_none'			=> rex_post('h_csp_object_none'),
+		'h_csp_object_url'			=> rex_post('h_csp_object_url'),
 		
 		'h_csp_form_https'			=> rex_post('h_csp_form_https'),
 		'h_csp_form_data'			=> rex_post('h_csp_form_data'),
@@ -115,6 +122,7 @@ if ($func == "save" && isset($_POST['submit'])):
 		'h_csp_form_eval'			=> rex_post('h_csp_form_eval'),
 		'h_csp_form_hashes'			=> rex_post('h_csp_form_hashes'),
 		'h_csp_form_none'			=> rex_post('h_csp_form_none'),
+		'h_csp_form_url'			=> rex_post('h_csp_form_url'),
 		
 		'h_csp_frame_https'			=> rex_post('h_csp_frame_https'),
 		'h_csp_frame_data'			=> rex_post('h_csp_frame_data'),
@@ -124,13 +132,35 @@ if ($func == "save" && isset($_POST['submit'])):
 		'h_csp_frame_eval'			=> rex_post('h_csp_frame_eval'),
 		'h_csp_frame_hashes'		=> rex_post('h_csp_frame_hashes'),
 		'h_csp_frame_none'			=> rex_post('h_csp_frame_none'),
+		'h_csp_frame_url'			=> rex_post('h_csp_frame_url'),
 		
 		'h_csp_frameanc_https'		=> rex_post('h_csp_frameanc_https'),
 		'h_csp_frameanc_data'		=> rex_post('h_csp_frameanc_data'),
 		'h_csp_frameanc_blob'		=> rex_post('h_csp_frameanc_blob'),
 		'h_csp_frameanc_self'		=> rex_post('h_csp_frameanc_self'),
 		'h_csp_frameanc_none'		=> rex_post('h_csp_frameanc_none'),
+		'h_csp_frameanc_url'		=> rex_post('h_csp_frameanc_url'),
 		
+		'h_csp_connect_https'		=> rex_post('h_csp_connect_https'),
+		'h_csp_connect_data'		=> rex_post('h_csp_connect_data'),
+		'h_csp_connect_blob'		=> rex_post('h_csp_connect_blob'),
+		'h_csp_connect_self'		=> rex_post('h_csp_connect_self'),
+		'h_csp_connect_inline'		=> rex_post('h_csp_connect_inline'),
+		'h_csp_connect_eval'		=> rex_post('h_csp_connect_eval'),
+		'h_csp_connect_hashes'		=> rex_post('h_csp_connect_hashes'),
+		'h_csp_connect_none'		=> rex_post('h_csp_connect_none'),
+		'h_csp_connect_url'			=> rex_post('h_csp_connect_url'),
+		
+		'h_csp_manifest_https'		=> rex_post('h_csp_manifest_https'),
+		'h_csp_manifest_data'		=> rex_post('h_csp_manifest_data'),
+		'h_csp_manifest_blob'		=> rex_post('h_csp_manifest_blob'),
+		'h_csp_manifest_self'		=> rex_post('h_csp_manifest_self'),
+		'h_csp_manifest_inline'		=> rex_post('h_csp_manifest_inline'),
+		'h_csp_manifest_eval'		=> rex_post('h_csp_manifest_eval'),
+		'h_csp_manifest_hashes'		=> rex_post('h_csp_manifest_hashes'),
+		'h_csp_manifest_none'		=> rex_post('h_csp_manifest_none'),
+		'h_csp_manifest_url'			=> rex_post('h_csp_manifest_url'),
+
 		
 		'h_fpp'						=> rex_post('h_fpp'),
 		'h_fpp_be'					=> rex_post('h_fpp_be'),
@@ -510,8 +540,8 @@ $config = $this->getConfig('config');
                 	<!-- CSP-Eingabefeld -->
                     <dl class="rex-form-group form-group">
                         <dt><label for="" class="nobold"><?php echo $this->i18n('a1656_bas_h_csp_definition'); ?></label></dt>
-                        <dd>                        
-                            <input type="text" size="25" name="h_csp_definition" id="h_csp_definition" value="<?php echo @$config['h_csp_definition']; ?>" maxlength="250" class="form-control" placeholder="<?php echo aFM_noQuote($this->i18n('a1656_bas_h_csp_definition_example')); ?>" />
+                        <dd>
+                            <input type="text" size="25" name="h_csp_definition" id="h_csp_definition" value="<?php echo @$config['h_csp_definition']; ?>" class="form-control" placeholder="<?php echo aFM_noQuote($this->i18n('a1656_bas_h_csp_definition_example')); ?>" />
                         </dd>
                     </dl>
 				</div>
@@ -583,7 +613,12 @@ $config = $this->getConfig('config');
                                             <input name="h_csp_default_none" type="checkbox" id="h_csp_default_none"  value="checked" <?php echo @$config['h_csp_default_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
-                                    </li> 
+                                    </li>
+									
+                                    <li>
+										<br />
+										<input type="text" size="25" name="h_csp_default_url" id="h_csp_default_url" value="<?php echo aFM_maskChar(@$config['h_csp_default_url']); ?>" class="form-control" placeholder="<?php echo aFM_noQuote($this->i18n('a1656_bas_h_csp_url_example')); ?>" />
+                                    </li>
                                 </ul>
                             </div>
                             
@@ -648,7 +683,12 @@ $config = $this->getConfig('config');
                                             <input name="h_csp_img_none" type="checkbox" id="h_csp_img_none"  value="checked" <?php echo @$config['h_csp_img_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
-                                    </li> 
+                                    </li>
+									
+                                    <li>
+										<br />
+										<input type="text" size="25" name="h_csp_img_url" id="h_csp_img_url" value="<?php echo aFM_maskChar(@$config['h_csp_img_url']); ?>" class="form-control" placeholder="<?php echo aFM_noQuote($this->i18n('a1656_bas_h_csp_url_example')); ?>" />
+                                    </li>
                                 </ul>
                             </div>
                             
@@ -713,7 +753,12 @@ $config = $this->getConfig('config');
                                             <input name="h_csp_media_none" type="checkbox" id="h_csp_media_none"  value="checked" <?php echo @$config['h_csp_media_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
-                                    </li> 
+                                    </li>
+									
+                                    <li>
+										<br />
+										<input type="text" size="25" name="h_csp_media_url" id="h_csp_media_url" value="<?php echo aFM_maskChar(@$config['h_csp_media_url']); ?>" class="form-control" placeholder="<?php echo aFM_noQuote($this->i18n('a1656_bas_h_csp_url_example')); ?>" />
+                                    </li>
                                 </ul>
                             </div>
                     
@@ -778,7 +823,12 @@ $config = $this->getConfig('config');
                                             <input name="h_csp_font_none" type="checkbox" id="h_csp_font_none"  value="checked" <?php echo @$config['h_csp_font_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
-                                    </li> 
+                                    </li>
+									
+                                    <li>
+										<br />
+										<input type="text" size="25" name="h_csp_font_url" id="h_csp_font_url" value="<?php echo aFM_maskChar(@$config['h_csp_font_url']); ?>" class="form-control" placeholder="<?php echo aFM_noQuote($this->i18n('a1656_bas_h_csp_url_example')); ?>" />
+                                    </li>
                                 </ul>
                             </div>
                     
@@ -843,7 +893,12 @@ $config = $this->getConfig('config');
                                             <input name="h_csp_script_none" type="checkbox" id="h_csp_script_none"  value="checked" <?php echo @$config['h_csp_script_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
-                                    </li> 
+                                    </li>
+									
+                                    <li>
+										<br />
+										<input type="text" size="25" name="h_csp_script_url" id="h_csp_script_url" value="<?php echo aFM_maskChar(@$config['h_csp_script_url']); ?>" class="form-control" placeholder="<?php echo aFM_noQuote($this->i18n('a1656_bas_h_csp_url_example')); ?>" />
+                                    </li>
                                 </ul>
                             </div>
                     
@@ -908,7 +963,12 @@ $config = $this->getConfig('config');
                                             <input name="h_csp_style_none" type="checkbox" id="h_csp_style_none"  value="checked" <?php echo @$config['h_csp_style_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
-                                    </li> 
+                                    </li>
+									
+                                    <li>
+										<br />
+										<input type="text" size="25" name="h_csp_style_url" id="h_csp_style_url" value="<?php echo aFM_maskChar(@$config['h_csp_style_url']); ?>" class="form-control" placeholder="<?php echo aFM_noQuote($this->i18n('a1656_bas_h_csp_url_example')); ?>" />
+                                    </li>
                                 </ul>
                             </div>
                     
@@ -973,7 +1033,12 @@ $config = $this->getConfig('config');
                                             <input name="h_csp_object_none" type="checkbox" id="h_csp_object_none"  value="checked" <?php echo @$config['h_csp_object_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
-                                    </li> 
+                                    </li>
+									
+                                    <li>
+										<br />
+										<input type="text" size="25" name="h_csp_object_url" id="h_csp_object_url" value="<?php echo aFM_maskChar(@$config['h_csp_object_url']); ?>" class="form-control" placeholder="<?php echo aFM_noQuote($this->i18n('a1656_bas_h_csp_url_example')); ?>" />
+                                    </li>
                                 </ul>
                             </div>
                     
@@ -1038,7 +1103,12 @@ $config = $this->getConfig('config');
                                             <input name="h_csp_form_none" type="checkbox" id="h_csp_form_none"  value="checked" <?php echo @$config['h_csp_form_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
-                                    </li> 
+                                    </li>
+									
+                                    <li>
+										<br />
+										<input type="text" size="25" name="h_csp_form_url" id="h_csp_form_url" value="<?php echo aFM_maskChar(@$config['h_csp_form_url']); ?>" class="form-control" placeholder="<?php echo aFM_noQuote($this->i18n('a1656_bas_h_csp_url_example')); ?>" />
+                                    </li>
                                 </ul>
                             </div>
                     
@@ -1103,7 +1173,12 @@ $config = $this->getConfig('config');
                                             <input name="h_csp_frame_none" type="checkbox" id="h_csp_frame_none"  value="checked" <?php echo @$config['h_csp_frame_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
-                                    </li> 
+                                    </li>
+									
+                                    <li>
+										<br />
+										<input type="text" size="25" name="h_csp_frame_url" id="h_csp_frame_url" value="<?php echo aFM_maskChar(@$config['h_csp_frame_url']); ?>" class="form-control" placeholder="<?php echo aFM_noQuote($this->i18n('a1656_bas_h_csp_url_example')); ?>" />
+                                    </li>
                                 </ul>
                             </div>
                     
@@ -1147,10 +1222,156 @@ $config = $this->getConfig('config');
                                             <input name="h_csp_frameanc_none" type="checkbox" id="h_csp_frameanc_none"  value="checked" <?php echo @$config['h_csp_frameanc_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
                                         </label>
                                         </div>
-                                    </li> 
+                                    </li>
+									
+                                    <li>
+										<br />
+										<input type="text" size="25" name="h_csp_frameanc_url" id="h_csp_frameanc_url" value="<?php echo aFM_maskChar(@$config['h_csp_frameanc_url']); ?>" class="form-control" placeholder="<?php echo aFM_noQuote($this->i18n('a1656_bas_h_csp_url_example')); ?>" />
+                                    </li>
                                 </ul>
                             </div>                    
                     
+                            
+                            <!-- connect-src -->
+                            <div class="cspblock">
+                                <label for=""><?php echo $this->i18n('a1656_bas_h_csp_connect'); ?></label>
+                            
+                                <ul>
+                                    <li>
+                                        <div class="checkbox toggle">
+                                        <label for="h_csp_connect_https">
+                                            <input name="h_csp_connect_https" type="checkbox" id="h_csp_connect_https"  value="checked" <?php echo @$config['h_csp_connect_https']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_https'); ?>
+                                        </label>
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <div class="checkbox toggle">
+                                        <label for="h_csp_connect_data">
+                                            <input name="h_csp_connect_data" type="checkbox" id="h_csp_connect_data"  value="checked" <?php echo @$config['h_csp_connect_data']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_data'); ?>
+                                        </label>
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <div class="checkbox toggle">
+                                        <label for="h_csp_connect_blob">
+                                            <input name="h_csp_connect_blob" type="checkbox" id="h_csp_connect_blob"  value="checked" <?php echo @$config['h_csp_connect_blob']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_blob'); ?>
+                                        </label>
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <div class="checkbox toggle">
+                                        <label for="h_csp_connect_self">
+                                            <input name="h_csp_connect_self" type="checkbox" id="h_csp_connect_self"  value="checked" <?php echo @$config['h_csp_connect_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
+                                        </label>
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <div class="checkbox toggle">
+                                        <label for="h_csp_connect_inline">
+                                            <input name="h_csp_connect_inline" type="checkbox" id="h_csp_connect_inline"  value="checked" <?php echo @$config['h_csp_connect_inline']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_inline'); ?>
+                                        </label>
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <div class="checkbox toggle">
+                                        <label for="h_csp_connect_eval">
+                                            <input name="h_csp_connect_eval" type="checkbox" id="h_csp_connect_eval"  value="checked" <?php echo @$config['h_csp_connect_eval']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_eval'); ?>
+                                        </label>
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <div class="checkbox toggle">
+                                        <label for="h_csp_connect_hashes">
+                                            <input name="h_csp_connect_hashes" type="checkbox" id="h_csp_connect_hashes"  value="checked" <?php echo @$config['h_csp_connect_hashes']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_hashes'); ?>
+                                        </label>
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <div class="checkbox toggle">
+                                        <label for="h_csp_connect_none">
+                                            <input name="h_csp_connect_none" type="checkbox" id="h_csp_connect_none"  value="checked" <?php echo @$config['h_csp_connect_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
+                                        </label>
+                                        </div>
+                                    </li>
+									
+                                    <li>
+										<br />
+										<input type="text" size="25" name="h_csp_connect_url" id="h_csp_connect_url" value="<?php echo aFM_maskChar(@$config['h_csp_connect_url']); ?>" class="form-control" placeholder="<?php echo aFM_noQuote($this->i18n('a1656_bas_h_csp_url_example')); ?>" />
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                            
+                            <!-- manifest-src -->
+                            <div class="cspblock">
+                                <label for=""><?php echo $this->i18n('a1656_bas_h_csp_manifest'); ?></label>
+                            
+                                <ul>
+                                    <li>
+                                        <div class="checkbox toggle">
+                                        <label for="h_csp_manifest_https">
+                                            <input name="h_csp_manifest_https" type="checkbox" id="h_csp_manifest_https"  value="checked" <?php echo @$config['h_csp_manifest_https']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_https'); ?>
+                                        </label>
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <div class="checkbox toggle">
+                                        <label for="h_csp_manifest_data">
+                                            <input name="h_csp_manifest_data" type="checkbox" id="h_csp_manifest_data"  value="checked" <?php echo @$config['h_csp_manifest_data']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_data'); ?>
+                                        </label>
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <div class="checkbox toggle">
+                                        <label for="h_csp_manifest_blob">
+                                            <input name="h_csp_manifest_blob" type="checkbox" id="h_csp_manifest_blob"  value="checked" <?php echo @$config['h_csp_manifest_blob']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_blob'); ?>
+                                        </label>
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <div class="checkbox toggle">
+                                        <label for="h_csp_manifest_self">
+                                            <input name="h_csp_manifest_self" type="checkbox" id="h_csp_manifest_self"  value="checked" <?php echo @$config['h_csp_manifest_self']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_self'); ?>
+                                        </label>
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <div class="checkbox toggle">
+                                        <label for="h_csp_manifest_inline">
+                                            <input name="h_csp_manifest_inline" type="checkbox" id="h_csp_manifest_inline"  value="checked" <?php echo @$config['h_csp_manifest_inline']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_inline'); ?>
+                                        </label>
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <div class="checkbox toggle">
+                                        <label for="h_csp_manifest_eval">
+                                            <input name="h_csp_manifest_eval" type="checkbox" id="h_csp_manifest_eval"  value="checked" <?php echo @$config['h_csp_manifest_eval']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_eval'); ?>
+                                        </label>
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <div class="checkbox toggle">
+                                        <label for="h_csp_manifest_hashes">
+                                            <input name="h_csp_manifest_hashes" type="checkbox" id="h_csp_manifest_hashes"  value="checked" <?php echo @$config['h_csp_manifest_hashes']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_hashes'); ?>
+                                        </label>
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <div class="checkbox toggle">
+                                        <label for="h_csp_manifest_none">
+                                            <input name="h_csp_manifest_none" type="checkbox" id="h_csp_manifest_none"  value="checked" <?php echo @$config['h_csp_manifest_none']; ?> /> <?php echo $this->i18n('a1656_bas_h_editor_none'); ?>
+                                        </label>
+                                        </div>
+                                    </li>
+									
+                                    <li>
+										<br />
+										<input type="text" size="25" name="h_csp_manifest_url" id="h_csp_manifest_url" value="<?php echo aFM_maskChar(@$config['h_csp_manifest_url']); ?>" class="form-control" placeholder="<?php echo aFM_noQuote($this->i18n('a1656_bas_h_csp_url_example')); ?>" />
+                                    </li>
+                                </ul>
+                            </div>
+							
+
                         </dd>
                     </dl>
 				</div>
@@ -1200,7 +1421,7 @@ $config = $this->getConfig('config');
                     <dl class="rex-form-group form-group">
                         <dt><label for="" class="nobold"><?php echo $this->i18n('a1656_bas_h_fpp_definition_f'); ?></label></dt>
                         <dd>                        
-                            <input type="text" size="25" name="h_fpp_definition_f" id="h_fpp_definition_f" value="<?php echo @$config['h_fpp_definition_f']; ?>" maxlength="250" class="form-control" placeholder="<?php echo aFM_noQuote($this->i18n('a1656_bas_h_fpp_definition_f_example')); ?>" />
+                            <input type="text" size="25" name="h_fpp_definition_f" id="h_fpp_definition_f" value="<?php echo @$config['h_fpp_definition_f']; ?>" class="form-control" placeholder="<?php echo aFM_noQuote($this->i18n('a1656_bas_h_fpp_definition_f_example')); ?>" />
                         </dd>
                     </dl>
                     
@@ -1208,7 +1429,7 @@ $config = $this->getConfig('config');
                     <dl class="rex-form-group form-group">
                         <dt><label for="" class="nobold"><?php echo $this->i18n('a1656_bas_h_fpp_definition_p'); ?></label></dt>
                         <dd>                        
-                            <input type="text" size="25" name="h_fpp_definition_p" id="h_fpp_definition_p" value="<?php echo @$config['h_fpp_definition_p']; ?>" maxlength="250" class="form-control" placeholder="<?php echo aFM_noQuote($this->i18n('a1656_bas_h_fpp_definition_p_example')); ?>" />
+                            <input type="text" size="25" name="h_fpp_definition_p" id="h_fpp_definition_p" value="<?php echo @$config['h_fpp_definition_p']; ?>" class="form-control" placeholder="<?php echo aFM_noQuote($this->i18n('a1656_bas_h_fpp_definition_p_example')); ?>" />
                         </dd>
                     </dl>
 				</div>
