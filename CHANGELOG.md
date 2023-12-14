@@ -6,6 +6,7 @@ Changelog
 <b>Version 1.1.3</b>
 - Sprachdateien für DK + NL
 - Zeichenbegrenzung CSP-Freitextfeld aufgehoben
+- zusätzliche Auswahlen für CSPs
 
 <b>Version 1.1.2</b>
 - DarkMode für manuelle Theme-Auswahl hinzugefügt
