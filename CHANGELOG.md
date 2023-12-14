@@ -3,6 +3,9 @@ HTTP-Header
 
 Changelog
 ---------
+<b>Version 1.1.3</b>
+- Sprachdateien für DK + NL
+- Zeichenbegrenzung CSP-Freitextfeld aufgehoben
 
 <b>Version 1.1.2</b>
 - DarkMode für manuelle Theme-Auswahl hinzugefügt

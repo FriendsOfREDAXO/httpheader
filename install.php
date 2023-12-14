@@ -2,8 +2,8 @@
 /*
 	Redaxo-Addon HTTP-Header
 	Installation
-	v1.0
-	by Falko Müller @ 2021
+	v1.1.3
+	by Falko Müller @ 2021-2023
 	package: redaxo5
 */
 
@@ -51,6 +51,7 @@ if (!$this->hasConfig()):
 		'h_csp_default_eval'		=> '',
 		'h_csp_default_hashes'		=> '',
 		'h_csp_default_none'		=> '',
+		'h_csp_default_url'			=> '',
 		
 		'h_csp_img_https'			=> '',
 		'h_csp_img_data'			=> 'checked',
@@ -60,6 +61,7 @@ if (!$this->hasConfig()):
 		'h_csp_img_eval'			=> '',
 		'h_csp_img_hashes'			=> '',
 		'h_csp_img_none'			=> '',
+		'h_csp_img_url'			=> '',
 		
 		'h_csp_media_https'			=> '',
 		'h_csp_media_data'			=> '',
@@ -69,6 +71,7 @@ if (!$this->hasConfig()):
 		'h_csp_media_eval'			=> '',
 		'h_csp_media_hashes'		=> '',
 		'h_csp_media_none'			=> '',
+		'h_csp_media_url'			=> '',
 		
 		'h_csp_font_https'			=> '',
 		'h_csp_font_data'			=> 'checked',
@@ -78,6 +81,7 @@ if (!$this->hasConfig()):
 		'h_csp_font_eval'			=> '',
 		'h_csp_font_hashes'			=> '',
 		'h_csp_font_none'			=> '',
+		'h_csp_font_url'			=> '',
 		
 		'h_csp_script_https'		=> '',
 		'h_csp_script_data'			=> '',
@@ -87,6 +91,7 @@ if (!$this->hasConfig()):
 		'h_csp_script_eval'			=> '',
 		'h_csp_script_hashes'		=> '',
 		'h_csp_script_none'			=> '',
+		'h_csp_script_url'			=> '',
 		
 		'h_csp_style_https'			=> '',
 		'h_csp_style_data'			=> '',
@@ -96,6 +101,7 @@ if (!$this->hasConfig()):
 		'h_csp_style_eval'			=> '',
 		'h_csp_style_hashes'		=> '',
 		'h_csp_style_none'			=> '',
+		'h_csp_style_url'			=> '',
 		
 		'h_csp_object_https'		=> '',
 		'h_csp_object_data'			=> '',
@@ -105,6 +111,7 @@ if (!$this->hasConfig()):
 		'h_csp_object_eval'			=> '',
 		'h_csp_object_hashes'		=> '',
 		'h_csp_object_none'			=> '',
+		'h_csp_object_url'			=> '',
 		
 		'h_csp_form_https'			=> '',
 		'h_csp_form_data'			=> '',
@@ -114,6 +121,7 @@ if (!$this->hasConfig()):
 		'h_csp_form_eval'			=> '',
 		'h_csp_form_hashes'			=> '',
 		'h_csp_form_none'			=> '',
+		'h_csp_form_url'			=> '',
 		
 		'h_csp_frame_https'			=> '',
 		'h_csp_frame_data'			=> '',
@@ -123,12 +131,35 @@ if (!$this->hasConfig()):
 		'h_csp_frame_eval'			=> '',
 		'h_csp_frame_hashes'		=> '',
 		'h_csp_frame_none'			=> '',
+		'h_csp_frame_url'			=> '',
 		
 		'h_csp_frameanc_https'		=> '',
 		'h_csp_frameanc_data'		=> '',
 		'h_csp_frameanc_blob'		=> '',
 		'h_csp_frameanc_self'		=> '',
 		'h_csp_frameanc_none'		=> 'checked',
+		'h_csp_frameanc_url'		=> '',
+		
+		'h_csp_connect_https'		=> '',
+		'h_csp_connect_data'		=> '',
+		'h_csp_connect_blob'		=> '',
+		'h_csp_connect_self'		=> '',
+		'h_csp_connect_inline'		=> '',
+		'h_csp_connect_eval'		=> '',
+		'h_csp_connect_hashes'		=> '',
+		'h_csp_connect_none'		=> '',
+		'h_csp_connect_url'			=> '',
+		
+		'h_csp_manifest_https'		=> '',
+		'h_csp_manifest_data'		=> '',
+		'h_csp_manifest_blob'		=> '',
+		'h_csp_manifest_self'		=> '',
+		'h_csp_manifest_inline'		=> '',
+		'h_csp_manifest_eval'		=> '',
+		'h_csp_manifest_hashes'		=> '',
+		'h_csp_manifest_none'		=> '',
+		'h_csp_manifest_url'		=> '',
+
 
 		'h_fpp'						=> '',
 		'h_fpp_be'					=> '',

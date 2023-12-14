@@ -2,8 +2,8 @@
 /*
 	Redaxo-Addon HTTP-Header
 	Boot (weitere Konfigurationen)
-	v1.1.1
-	by Falko Müller @ 2021
+	v1.1.3
+	by Falko Müller @ 2021-2023
 	package: redaxo5
 */
 
@@ -118,6 +118,7 @@ if (@$config['h_csp'] == 'checked'):
 			$tmp .= (@$config['h_csp_default_eval'] == 'checked') 		? " 'unsafe-eval'" : '';
 			$tmp .= (@$config['h_csp_default_hashes'] == 'checked') 	? " 'unsafe-hashes'" : '';
 			$tmp .= (@$config['h_csp_default_none'] == 'checked') 		? " 'none'" : '';
+			$tmp .= (!empty(@$config['h_csp_default_url'])) 			? " ".@$config['h_csp_default_url'] : '';
 		$opt .= (!empty($tmp)) ? ' default-src'.$tmp.';' : '';
 		
 		//img
@@ -130,6 +131,7 @@ if (@$config['h_csp'] == 'checked'):
 			$tmp .= (@$config['h_csp_img_eval'] == 'checked') 			? " 'unsafe-eval'" : '';
 			$tmp .= (@$config['h_csp_img_hashes'] == 'checked') 		? " 'unsafe-hashes'" : '';
 			$tmp .= (@$config['h_csp_img_none'] == 'checked') 			? " 'none'" : '';
+			$tmp .= (!empty(@$config['h_csp_img_url'])) 			? " ".@$config['h_csp_img_url'] : '';
 		$opt .= (!empty($tmp)) ? ' img-src'.$tmp.';' : '';
 		
 		//media
@@ -142,6 +144,7 @@ if (@$config['h_csp'] == 'checked'):
 			$tmp .= (@$config['h_csp_media_eval'] == 'checked') 		? " 'unsafe-eval'" : '';
 			$tmp .= (@$config['h_csp_media_hashes'] == 'checked') 		? " 'unsafe-hashes'" : '';
 			$tmp .= (@$config['h_csp_media_none'] == 'checked') 		? " 'none'" : '';
+			$tmp .= (!empty(@$config['h_csp_media_url'])) 			? " ".@$config['h_csp_media_url'] : '';
 		$opt .= (!empty($tmp)) ? ' media-src'.$tmp.';' : '';
 		
 		//font
@@ -154,6 +157,7 @@ if (@$config['h_csp'] == 'checked'):
 			$tmp .= (@$config['h_csp_font_eval'] == 'checked') 			? " 'unsafe-eval'" : '';
 			$tmp .= (@$config['h_csp_font_hashes'] == 'checked') 		? " 'unsafe-hashes'" : '';
 			$tmp .= (@$config['h_csp_font_none'] == 'checked') 			? " 'none'" : '';
+			$tmp .= (!empty(@$config['h_csp_font_url'])) 			? " ".@$config['h_csp_font_url'] : '';
 		$opt .= (!empty($tmp)) ? ' font-src'.$tmp.';' : '';
 		
 		//script
@@ -166,6 +170,7 @@ if (@$config['h_csp'] == 'checked'):
 			$tmp .= (@$config['h_csp_script_eval'] == 'checked') 		? " 'unsafe-eval'" : '';
 			$tmp .= (@$config['h_csp_script_hashes'] == 'checked') 		? " 'unsafe-hashes'" : '';
 			$tmp .= (@$config['h_csp_script_none'] == 'checked') 		? " 'none'" : '';
+			$tmp .= (!empty(@$config['h_csp_script_url'])) 			? " ".@$config['h_csp_script_url'] : '';
 		$opt .= (!empty($tmp)) ? ' script-src'.$tmp.';' : '';
 		
 		//style
@@ -178,6 +183,7 @@ if (@$config['h_csp'] == 'checked'):
 			$tmp .= (@$config['h_csp_style_eval'] == 'checked') 		? " 'unsafe-eval'" : '';
 			$tmp .= (@$config['h_csp_style_hashes'] == 'checked') 		? " 'unsafe-hashes'" : '';
 			$tmp .= (@$config['h_csp_style_none'] == 'checked') 		? " 'none'" : '';
+			$tmp .= (!empty(@$config['h_csp_style_url'])) 			? " ".@$config['h_csp_style_url'] : '';
 		$opt .= (!empty($tmp)) ? ' style-src'.$tmp.';' : '';
 		
 		//object
@@ -190,6 +196,7 @@ if (@$config['h_csp'] == 'checked'):
 			$tmp .= (@$config['h_csp_object_eval'] == 'checked') 		? " 'unsafe-eval'" : '';
 			$tmp .= (@$config['h_csp_object_hashes'] == 'checked') 		? " 'unsafe-hashes'" : '';
 			$tmp .= (@$config['h_csp_object_none'] == 'checked') 		? " 'none'" : '';
+			$tmp .= (!empty(@$config['h_csp_object_url'])) 			? " ".@$config['h_csp_object_url'] : '';
 		$opt .= (!empty($tmp)) ? ' object-src'.$tmp.';' : '';
 		
 		//form-action
@@ -202,6 +209,7 @@ if (@$config['h_csp'] == 'checked'):
 			$tmp .= (@$config['h_csp_form_eval'] == 'checked') 			? " 'unsafe-eval'" : '';
 			$tmp .= (@$config['h_csp_form_hashes'] == 'checked') 		? " 'unsafe-hashes'" : '';
 			$tmp .= (@$config['h_csp_form_none'] == 'checked') 			? " 'none'" : '';
+			$tmp .= (!empty(@$config['h_csp_form_url'])) 			? " ".@$config['h_csp_form_url'] : '';
 		$opt .= (!empty($tmp)) ? ' form-action'.$tmp.';' : '';
 		
 		//frame
@@ -214,6 +222,7 @@ if (@$config['h_csp'] == 'checked'):
 			$tmp .= (@$config['h_csp_frame_eval'] == 'checked') 		? " 'unsafe-eval'" : '';
 			$tmp .= (@$config['h_csp_frame_hashes'] == 'checked') 		? " 'unsafe-hashes'" : '';
 			$tmp .= (@$config['h_csp_frame_none'] == 'checked') 		? " 'none'" : '';
+			$tmp .= (!empty(@$config['h_csp_frame_url'])) 			? " ".@$config['h_csp_frame_url'] : '';
 		$opt .= (!empty($tmp)) ? ' frame-src'.$tmp.';' : '';
 		
 		//frame-ancestors
@@ -223,7 +232,34 @@ if (@$config['h_csp'] == 'checked'):
 			$tmp .= (@$config['h_csp_frameanc_blob'] == 'checked') 		? " blob:" : '';
 			$tmp .= (@$config['h_csp_frameanc_self'] == 'checked') 		? " 'self'" : '';
 			$tmp .= (@$config['h_csp_frameanc_none'] == 'checked') 		? " 'none'" : '';
+			$tmp .= (!empty(@$config['h_csp_frameanc_url'])) 			? " ".@$config['h_csp_frameanc_url'] : '';
 		$opt .= (!empty($tmp)) ? ' frame-ancestors'.$tmp.';' : '';
+		
+		//connect
+		$tmp = "";
+			$tmp .= (@$config['h_csp_connect_https'] == 'checked') 		? " https:" : '';
+			$tmp .= (@$config['h_csp_connect_data'] == 'checked') 		? " data:" : '';
+			$tmp .= (@$config['h_csp_connect_blob'] == 'checked') 		? " blob:" : '';
+			$tmp .= (@$config['h_csp_connect_self'] == 'checked') 		? " 'self'" : '';
+			$tmp .= (@$config['h_csp_connect_inline'] == 'checked')		? " 'unsafe-inline'" : '';
+			$tmp .= (@$config['h_csp_connect_eval'] == 'checked') 		? " 'unsafe-eval'" : '';
+			$tmp .= (@$config['h_csp_connect_hashes'] == 'checked') 	? " 'unsafe-hashes'" : '';
+			$tmp .= (@$config['h_csp_connect_none'] == 'checked') 		? " 'none'" : '';
+			$tmp .= (!empty(@$config['h_csp_connect_url'])) 			? " ".@$config['h_csp_connect_url'] : '';
+		$opt .= (!empty($tmp)) ? ' connect-src'.$tmp.';' : '';
+		
+		//manifest
+		$tmp = "";
+			$tmp .= (@$config['h_csp_manifest_https'] == 'checked') 	? " https:" : '';
+			$tmp .= (@$config['h_csp_manifest_data'] == 'checked') 		? " data:" : '';
+			$tmp .= (@$config['h_csp_manifest_blob'] == 'checked') 		? " blob:" : '';
+			$tmp .= (@$config['h_csp_manifest_self'] == 'checked') 		? " 'self'" : '';
+			$tmp .= (@$config['h_csp_manifest_inline'] == 'checked')	? " 'unsafe-inline'" : '';
+			$tmp .= (@$config['h_csp_manifest_eval'] == 'checked') 		? " 'unsafe-eval'" : '';
+			$tmp .= (@$config['h_csp_manifest_hashes'] == 'checked') 	? " 'unsafe-hashes'" : '';
+			$tmp .= (@$config['h_csp_manifest_none'] == 'checked') 		? " 'none'" : '';
+			$tmp .= (!empty(@$config['h_csp_manifest_url'])) 			? " ".@$config['h_csp_manifest_url'] : '';
+		$opt .= (!empty($tmp)) ? ' manifest-src'.$tmp.';' : '';
 
 	endif;
 	
