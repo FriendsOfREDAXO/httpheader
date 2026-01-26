@@ -53,6 +53,7 @@ a1656_bas_h_fpp_definition_f = Opbevarer funktionsdefinition
 a1656_bas_h_fpp_definition_p = Lagre definition af tilladelser
 a1656_bas_h_fpp_definition_f_example = Format: Feature-Policy: camera 'none'; microphone self;
 a1656_bas_h_fpp_definition_p_example = Format: Tilladelsespolitik: camera=(), microphone=(self)
+a1656_bas_h_ignore_fe = Ignorer frontend-sider
 
 a1656_bas_h_csp_default = default-src
 a1656_bas_h_csp_img = img-src

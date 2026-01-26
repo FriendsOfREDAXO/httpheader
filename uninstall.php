@@ -1,25 +1,22 @@
 <?php
+
 /*
-	Redaxo-Addon HTTP-Header
-	Deinstallation
-	v1.0
-	by Falko Müller @ 2021
-	package: redaxo5
+    Redaxo-Addon HTTP-Header
+    Deinstallation
+    v1.0
+    by Falko Müller @ 2021
+    package: redaxo5
 */
 
-//Variablen deklarieren
+// Variablen deklarieren
 $mypage = $this->getProperty('package');
-$error = ""; $notice = "";
+$error = '';
+$notice = '';
 
+// Datenbank-Einträge löschen
 
-//Datenbank-Einträge löschen
+// Module löschen
 
+// Aktionen löschen
 
-//Module löschen
-
-
-//Aktionen löschen
-
-
-//Templates löschen
-?>
+// Templates löschen

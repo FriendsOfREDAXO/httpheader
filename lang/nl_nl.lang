@@ -53,6 +53,7 @@ a1656_bas_h_fpp_definition_f = Store feature definition
 a1656_bas_h_fpp_definition_p = Store permissions definition
 a1656_bas_h_fpp_definition_f_example = Format: Feature-Policy: camera 'none'; microfoon self;
 a1656_bas_h_fpp_definition_p_example = Format: Permissions-Policy: camera=(), microphone=(self)
+a1656_bas_h_ignore_fe = Negeer frontend-pagina's
 
 a1656_bas_h_csp_default = default-src
 a1656_bas_h_csp_img = img-src
