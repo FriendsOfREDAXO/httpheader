@@ -1,10 +1,10 @@
 <?php
 /*
-	Redaxo-Addon HTTP-Header
-	Verwaltung: Hilfe
-	v1.0
-	by Falko Müller @ 2021
-	package: redaxo5
+    Redaxo-Addon HTTP-Header
+    Verwaltung: Hilfe
+    v1.0
+    by Falko Müller @ 2021
+    package: redaxo5
 */
 ?>
 
@@ -16,7 +16,7 @@
 <section class="rex-page-section">
 	<div class="panel panel-default">
 
-		<header class="panel-heading"><div class="panel-title"><?php echo $this->i18n('a1656_head_help'); ?></div></header>
+		<header class="panel-heading"><div class="panel-title"><?= $this->i18n('a1656_head_help') ?></div></header>
         
 		<div class="panel-body">
 			<div class="rex-docs">
@@ -32,7 +32,7 @@
                 
 				<div class="rex-docs-content">
                 
-					<h1>Addon: <?php echo $this->i18n('a1656_title'); ?></h1>
+					<h1>Addon: <?= $this->i18n('a1656_title') ?></h1>
 
 					<p>Mit dieser Erweiterung können verschiedene Webseiten-Header zur Einstellung von Sicherheitsmaßnahmen und Optimierungen aktiviert werden.
 				  </p>
@@ -95,25 +95,25 @@
                       </tr>
                       <tr>
                         <td valign="top"><strong>X-Frame-Options</strong></td>
-                        <td valign="top">Das Setzen von X-Frame-Options hilft dabei, Angriffe über Framing-Mechanismen zu unterbinden.</td>
+                        <td valign="top">Das Setzen von X-Frame-Options hilft dabei, Angriffe über Framing-Mechanismen zu unterbinden.</td>
                       </tr>
                         <tr>
                           <td valign="top"><strong>X-XSS-Protection</strong></td>
-                          <td valign="top">Der X-XSS-Header definiert, wie in Browsern eingebaute XSS-Filter konfiguriert werden.</td>
+                          <td valign="top">Der X-XSS-Header definiert, wie in Browsern eingebaute XSS-Filter konfiguriert werden.</td>
                         </tr>
                         <tr>
                           <td valign="top"><strong>Referrer-Policy</strong></td>
-                          <td valign="top">Mit der Referrer Policy wird geregelt, welche der Referrer-Informationen in Anfragen aufgenommen werden sollen und welche nicht.</td>
+                          <td valign="top">Mit der Referrer Policy wird geregelt, welche der Referrer-Informationen in Anfragen aufgenommen werden sollen und welche nicht.</td>
                         </tr>
                         <tr>
                           <td width="200" valign="top"><strong>Strict-Transport-Security</strong></td>
-                          <td valign="top">Strict-Transport-Security stellt sicher, dass die Webseite für die deefinierte Zeit lediglich über HTTPS aufgerufen werden kann.<br>
+                          <td valign="top">Strict-Transport-Security stellt sicher, dass die Webseite für die deefinierte Zeit lediglich über HTTPS aufgerufen werden kann.<br>
                           <br>
                           Die Angabe &quot;max-age&quot; ist dabei für eine korrekte Funktion Pflicht.</td>
                         </tr>
                         <tr>
                           <td valign="top"><strong>Content-Security-Policy</strong></td>
-                          <td valign="top">Die Content-Security-Policy definiert, aus welchen Quellen verschiedene Anfragen/Ressourcen, welche das Injizieren und Ausführen von evtl. bösartigen Befehlen, eingebunden werden dürfen.<br>
+                          <td valign="top">Die Content-Security-Policy definiert, aus welchen Quellen verschiedene Anfragen/Ressourcen, welche das Injizieren und Ausführen von evtl. bösartigen Befehlen, eingebunden werden dürfen.<br>
                           <br>
                           Die default-Angabe sollte dabei immer gesetzt werden. Alle weiteren Angaben ändern die default-Angabe entsprechend ab.</td>
                         </tr>
@@ -150,7 +150,7 @@
                     
                     <h3>Fragen, Wünsche, Probleme?</h3>
                     Du hast einen Fehler gefunden oder ein nettes Feature parat?<br>
-				Lege ein Issue unter <a href="<?php echo $this->getProperty('supportpage'); ?>" target="_blank"><?php echo $this->getProperty('supportpage'); ?></a> an. </div>
+				Lege ein Issue unter <a href="<?= $this->getProperty('supportpage') ?>" target="_blank"><?= $this->getProperty('supportpage') ?></a> an. </div>
             </div>
 
 	  </div>

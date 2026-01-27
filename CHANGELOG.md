@@ -1,21 +1,38 @@
-HTTP-Header
-===========
+# HTTP-Header - Changelog
 
-Changelog
----------
-<b>Version 1.1.3</b>
-- Sprachdateien für DK + NL
-- Zeichenbegrenzung CSP-Freitextfeld aufgehoben
-- zusätzliche Auswahlen für CSPs
+## Version 1.2.0 - 26.01.2026
 
-<b>Version 1.1.2</b>
-- DarkMode für manuelle Theme-Auswahl hinzugefügt
+### Features
 
-<b>Version 1.1.1</b>
-- Korrektur DarkMode
+* Neue Option um die Header bei ausgewÃ¤hlten Frontend-Seiten zu unterdrÃ¼cken @aeberhard
 
-<b>Version 1.1</b>
-- Anpassung für DarkMode
+### Ã„nderungen
 
-<b>Version 1.0</b>
-- Erste Version mit allen grundlegenden Headern
+* Inline-CSS in CSS-Datei ausgelagert
+* Inline-JavaScript in Script-Datei ausgelagert
+* CSS+JS nur beim Addon httpheader laden
+* PHP Code mit REDAXO-Style bearbeitet
+* diverse kleinere Anpassungen/Fixes
+* Changelog Syntax angepasst
+
+## Version 1.1.3
+
+* Sprachdateien fÃ¼r DK + NL
+* Zeichenbegrenzung CSP-Freitextfeld aufgehoben
+* zusÃ¤tzliche Auswahlen fÃ¼r CSPs
+
+## Version 1.1.2
+
+* DarkMode fÃ¼r manuelle Theme-Auswahl hinzugefÃ¼gt
+
+## Version 1.1.1
+
+* Korrektur DarkMode
+
+## Version 1.1
+
+* Anpassung fÃ¼r DarkMode
+
+## Version 1.0
+
+* Erste Version mit allen grundlegenden Headern
